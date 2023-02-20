@@ -182,7 +182,7 @@ public class questionSelector : MonoBehaviour
     {
         if(problema>=10)
         {
-            SceneManager.LoadScene("seleccion");
+            SceneManager.LoadScene("Reto");
         }
     }
 }

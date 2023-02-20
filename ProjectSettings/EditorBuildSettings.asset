@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/seleccion.unity
     guid: ece32c77dfe32304e925ca5f64594d8e
+  - enabled: 1
+    path: Assets/Scenes/Reto.unity
+    guid: 3a6a7237175fd7d4ab55143492d3d5d5
   m_configObjects: {}

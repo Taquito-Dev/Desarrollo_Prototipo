@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class operSelection : MonoBehaviour
 {
@@ -24,8 +25,14 @@ public class operSelection : MonoBehaviour
     [SerializeField] Slider numeradorS;
     [SerializeField] Slider denominadorS;
 
+    int problema = 0;
+    public GameObject bien;
+    public GameObject mal;
+
     public void operation(){
-        operacion=new string[20];
+        mal.SetActive(false);
+        bien.SetActive(false);
+        operacion =new string[20];
         respuesta=new string[20];
         operacion[0]="(16/5)+(4/5)";
         operacion[1]="(6/5)+(2/5)";
@@ -72,74 +79,93 @@ public class operSelection : MonoBehaviour
         
         m=Random.Range(0,19);
         operaciontxt.text=operacion[m];
-        respuestaTemp=respuesta[m];
-        Debug.Log(operacion[m]);
+        Debug.Log(m);
     }
 
     public void comparacion(){
 
        
-        switch(operacion[m]){
-            case "(16/5)+(4/5)":
-            respuestaCorrecta=12/5;
-            break;
-            case "(6/5)+(2/5)":
-            respuestaCorrecta=8/5;
-            break;
-            case "(7/2)+(4/2)":
-            respuestaCorrecta=3/2;
-            break;
-            case "(1/5)+(4/5)":
-            respuestaCorrecta=5/5;
-            break;
-            case "(2/4)+(3/4)":
-            respuestaCorrecta=5/4;
-            break;
-            case "(2/4)+(1/4)":
-            respuestaCorrecta=3/4;
-            break;
-            case "(1/6)+(3/6)":
-            respuestaCorrecta=4/6 ;
-            break;
-            case "(2/3)+(3/3)":
-            respuestaCorrecta=5/3;
-            break;
-            case "(6/2)+(4/2)-(1/2)":
-            respuestaCorrecta=9/2 ;
-            break;
-            case "(11/3)-(5/3)":
-            respuestaCorrecta=6/3;
-            break;
-            case "(3/8)-(1/8)":
-            respuestaCorrecta=2/8;
-            break;
-            case "(2/9)+(3/9)":
-            respuestaCorrecta=5/9;
-            break;
-            case "(2/7)+(1/7)":
-            respuestaCorrecta=3/7;
-            break;
-            case "(7/6)-(3/6)":
-            respuestaCorrecta=4/6;
-            break;
-            case "(2/3)-(2/3)":
-            respuestaCorrecta=0;
-            break;
-            case "(8/5)-(3/5)":
-            respuestaCorrecta=5/5;
-            break;
-            case "(2/8)+(1/8)-(1/8)":
-            respuestaCorrecta=2/8;
-            break;
-            case "(9/4)-(8/1)":
-            respuestaCorrecta=1/4;
-            break;
-            case "(12/1)-(2/1)":
-            respuestaCorrecta=10/1;
-            break;
-            case "(1/4)+(6/4)-(3/4)":
-            respuestaCorrecta=4/4;
-            break;
+        switch(m){
+            case 0:
+            respuestaCorrecta=2.4f;
+                Debug.Log("caso 1");
+                break;
+            case 1:
+            respuestaCorrecta=1.6f;
+                Debug.Log("caso 2");
+                break;
+            case 2:
+            respuestaCorrecta=1.5f;
+                Debug.Log("caso 3");
+                break;
+            case 3:
+            respuestaCorrecta=1f;
+                Debug.Log("caso 4");
+                break;
+            case 4:
+            respuestaCorrecta=1.25f;
+                Debug.Log("caso 5");
+                break;
+            case 5:
+            respuestaCorrecta=0.75f;
+                Debug.Log("caso 6");
+                break;
+            case 6:
+            respuestaCorrecta= 0.6666667f;
+                Debug.Log("caso 7");
+                break;
+            case 7:
+            respuestaCorrecta= 1.666666667f;
+                Debug.Log("caso 8");
+                break;
+            case 8:
+            respuestaCorrecta=4.5f;
+                Debug.Log("caso 9");
+                break;
+            case 9:
+            respuestaCorrecta= 2f;
+                Debug.Log("caso 10");
+                break;
+            case 10:
+            respuestaCorrecta=0.25f;
+                Debug.Log("caso 11");
+                break;
+            case 11:
+            respuestaCorrecta=0.5555556f;
+                Debug.Log("caso 12");
+                break;
+            case 12:
+            respuestaCorrecta= 0.4285714f;
+                Debug.Log("caso 13");
+                break;
+            case 13:
+            respuestaCorrecta=0.6666667f;
+                Debug.Log("caso 14");
+                break;
+            case 14:
+            respuestaCorrecta=0f;
+                Debug.Log("caso 15");
+                break;
+            case 15:
+            respuestaCorrecta=1f;
+                Debug.Log("caso 16");
+                break;
+            case 16:
+            respuestaCorrecta=0.25f;
+                Debug.Log("caso 17");
+                break;
+            case 17:
+            respuestaCorrecta=0.25f;
+                Debug.Log("caso 18");
+                break;
+            case 18:
+            respuestaCorrecta=10f;
+                Debug.Log("caso 19");
+                break;
+            case 19:
+            respuestaCorrecta=1f;
+                Debug.Log("caso 20");
+                break;
 
         }
         respuestaUsuario=numeradorS.value/denominadorS.value;
@@ -148,10 +174,21 @@ public class operSelection : MonoBehaviour
 
         if(respuestaUsuario==respuestaCorrecta){
             Debug.Log("Respues correcta");
+            bien.SetActive(true);
+            mal.SetActive(false);
+
+            problema++;
+            if (problema >= 10)
+            {
+                SceneManager.LoadScene("Reto");
+            }
+            Invoke("operation", 2f);
         }
         else{
+            mal.SetActive(true);
+            bien.SetActive(false);
             Debug.Log("Respuesta Incorrecta");
-            //Invoke("operation",2f);
+            Invoke("operation",2f);
         }
     }
 

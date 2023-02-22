@@ -9,7 +9,7 @@ public class Creditos : MonoBehaviour
     void Start()
     {
         //Metodo que se encarga de llamar despues de cierto tiempo 
-        Invoke("WaitToEnd",25);
+        Invoke("WaitToEnd",35);
     }
 
     // Update is called once per frame

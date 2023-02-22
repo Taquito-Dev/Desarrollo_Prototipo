@@ -213,9 +213,9 @@ public class triggerRespuesta : MonoBehaviour
                 bien.SetActive(true);
                 mal.SetActive(false);
                  puntos=puntos+10;
-                 if(puntos>=20)
+                 if(puntos==20)
                 {
-                    Invoke("GameScene",2.0f);
+                    Invoke("GameScene",1.0f);
                 }
                 else{
                     Invoke("Scene", 2.0f);

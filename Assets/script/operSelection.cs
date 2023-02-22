@@ -11,6 +11,11 @@ public class operSelection : MonoBehaviour
     public string[] respuesta;
     public int m;
 
+    public GameObject Canvas;
+    public GameObject plataforma;
+    public colocarPlano _colocarPlano;
+    public dropPlanos _dropPlanos;
+
     [SerializeField] TextMeshProUGUI denominador;
     [SerializeField] TextMeshProUGUI numerador;
     [SerializeField] TextMeshProUGUI operaciontxt;
@@ -176,6 +181,9 @@ public class operSelection : MonoBehaviour
             Debug.Log("Respues correcta");
             bien.SetActive(true);
             mal.SetActive(false);
+            plataforma.gameObject.SetActive(true);
+            _colocarPlano.DesactivarCanvas();
+            _dropPlanos.GenerarPlano();
 
             problema++;
             if (problema >= 10)
@@ -194,6 +202,7 @@ public class operSelection : MonoBehaviour
 
     void Start(){
         operation();
+        
     }
     // Update is called once per frame
     void Update()

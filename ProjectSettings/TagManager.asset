@@ -3,7 +3,30 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - 1-2
+  - 1-3
+  - 2-8
+  - 2-5
+  - 4-7
+  - 1-8
+  - 7-4
+  - 2-6
+  - 6-6
+  - 1-4
+  - 10-8
+  - 4-6
+  - 4-5
+  - 1-5
+  - 1-9
+  - 3-8
+  - 3-3
+  - 3-12
+  - 7-10
+  - 6-8
+  - Plano
+  - Plano2
+  - Plano3
   layers:
   - Default
   - TransparentFX

@@ -791,6 +791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anime_Girl
       objectReference: {fileID: 0}
+    - target: {fileID: 3514092270513594059, guid: 0ef6692556fa2f240956981ce1f6e3d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4491014807802965983, guid: 0ef6692556fa2f240956981ce1f6e3d9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -929,6 +933,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003610975}
   m_CullTransparentMesh: 1
+--- !u!1 &1051830196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051830197}
+  m_Layer: 0
+  m_Name: GameObject-Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051830197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051830196}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.4941642, y: -0.5, z: -4.200538}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1150725649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1150725651}
+  - component: {fileID: 1150725650}
+  m_Layer: 0
+  m_Name: GameObject-Script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1150725650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150725649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef0d4a42ad0bba4aae5106357732f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posit: {fileID: 1051830197}
+  transit: {fileID: 1051830197}
+  objectsToInstantiate:
+  - {fileID: 919132149155446097, guid: e8a4c871be714714fa482ca01df8a1dd, type: 3}
+  - {fileID: 919132149155446097, guid: 02b2c12e8adb19b438f1207942aceebc, type: 3}
+  - {fileID: 919132149155446097, guid: 750d73a0b8d33b840a84f9959d6eb748, type: 3}
+--- !u!4 &1150725651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150725649}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -1.8086562, y: 1.757647, z: -1.273363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1324920784
 GameObject:
   m_ObjectHideFlags: 0

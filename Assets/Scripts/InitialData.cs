@@ -48,7 +48,7 @@ public class InitialData : MonoBehaviour
     public string getProblemas(){
         return problema;
     }
-    //Este metodo recibe un valor igual al de porblema y se lo asigna a un label para mostrarlo
+    //Este metodo recibe un valor igual al de problema y se lo asigna a un label para mostrarlo
     public void setProblemas(string problemaN){
         problemlabelG.text=problemaN;
     }

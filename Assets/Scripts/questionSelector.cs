@@ -8,7 +8,8 @@ using TMPro;
 
 public class questionSelector : MonoBehaviour
 {
-    InitialData problemascr;
+    
+    public saveSystem save;
      
     public Text problemlabel;
     public Transform pos;
@@ -27,6 +28,7 @@ public class questionSelector : MonoBehaviour
 
     float time;
     float timeDelay;
+    int nR;
 
     public TMP_Text puntos;
     
@@ -34,26 +36,30 @@ public class questionSelector : MonoBehaviour
    
     void awake(){ 
        
-        problemascr=FindObjectOfType<InitialData>();
+        save=FindObjectOfType<saveSystem>();
+        
       
     }
     void Start()
     {
-        
         randomButtons();
         temp = Instantiate(objectsToInstantiate[n]);
         temp2 = Instantiate(ButtonstoInstantiate);
         //mal.SetActive(false);
         //bien.SetActive(false);
+        
 
+    }
+    public void setNivelReto(int nivelReto){
+        nR=nivelReto;
+        Debug.Log(nR);
     }
 
     public void instantiateObject(){
         Debug.Log("Objeto"+n);
-        
-        
     }
     public void randomButtons(){
+        save.prueba();
         problemas= new string[20];
         problemasTry= new string[4];
         problemas[0]="1/2"; 
@@ -94,12 +100,9 @@ public class questionSelector : MonoBehaviour
                 
                 if (problemasTry[j]==problemas[n]){
                         repetido=true;
-                    
                     }
             }
                 if(!repetido){
-                     
-                    
                     problemasTry[indice]=problemas[n];
                     buttonFrac = Instantiate(ButtonstoInstantiate,  new Vector2((indice+1)*180,200), pos.transform.rotation) as GameObject;  
                     buttonFrac.name = ("button"+indice.ToString());
@@ -113,12 +116,8 @@ public class questionSelector : MonoBehaviour
                         buttonFrac.GetComponent<Button>().onClick.AddListener(() => Invoke("seleccion", 1.0f));
                         
                     
-                }
-                    else
-                    {
-                    
+                }else{
                     buttonFrac.GetComponent<Button>().onClick.AddListener(() => Invoke("malSeleccion", 1.0f));
-                    
                 }
                     indice++;
                 }
@@ -180,7 +179,7 @@ public class questionSelector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(problema>=10)
+        if(problema>=3)
         {
             SceneManager.LoadScene("seleccion");
         }

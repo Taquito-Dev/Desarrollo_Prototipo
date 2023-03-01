@@ -584,6 +584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 619688835}
   - component: {fileID: 619688834}
+  - component: {fileID: 619688836}
   m_Layer: 0
   m_Name: pregunta
   m_TagString: Untagged
@@ -603,6 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b31a05ebe6c36041a830258f832658c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  save: {fileID: 0}
   problemlabel: {fileID: 188115117}
   pos: {fileID: 2098486047}
   problemasTry: []
@@ -650,6 +652,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &619688836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619688833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0178a0c2a277f63429e265336a439fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240810964
 GameObject:
   m_ObjectHideFlags: 0

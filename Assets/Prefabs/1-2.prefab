@@ -141,4 +141,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextoCubo: {fileID: 2946881272130754388, guid: 18168a890c487794f8fe863dfb77ba3e, type: 3}
-  texto: {fileID: 2946881272130754388, guid: 18168a890c487794f8fe863dfb77ba3e, type: 3}

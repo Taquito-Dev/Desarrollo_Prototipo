@@ -59,7 +59,7 @@ public class questionSelector : MonoBehaviour
         Debug.Log("Objeto"+n);
     }
     public void randomButtons(){
-        save.prueba();
+        //save.prueba();
         problemas= new string[20];
         problemasTry= new string[4];
         problemas[0]="1/2"; 

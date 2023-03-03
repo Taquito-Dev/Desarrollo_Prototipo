@@ -36,9 +36,7 @@ public class questionSelector : MonoBehaviour
    
     void awake(){ 
        
-        save=FindObjectOfType<saveSystem>();
-        
-      
+       /*  save=FindObjectOfType<saveSystem>(); */
     }
     void Start()
     {
@@ -47,7 +45,7 @@ public class questionSelector : MonoBehaviour
         temp2 = Instantiate(ButtonstoInstantiate);
         //mal.SetActive(false);
         //bien.SetActive(false);
-        
+        save.prueba();
 
     }
     public void setNivelReto(int nivelReto){
@@ -59,7 +57,7 @@ public class questionSelector : MonoBehaviour
         Debug.Log("Objeto"+n);
     }
     public void randomButtons(){
-        //save.prueba();
+        
         problemas= new string[20];
         problemasTry= new string[4];
         problemas[0]="1/2"; 

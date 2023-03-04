@@ -23,12 +23,12 @@ public class questionSelector : MonoBehaviour
     GameObject temp;
     GameObject temp2;
     public GameObject buttonFrac;
-   
     public GameObject imagenFrac;
+    public int intentos;
 
     float time;
     float timeDelay;
-    int nR;
+    int nR=1;
 
     public TMP_Text puntos;
     
@@ -40,19 +40,20 @@ public class questionSelector : MonoBehaviour
     }
     void Start()
     {
+        save.loadNivelReto();
         randomButtons();
         temp = Instantiate(objectsToInstantiate[n]);
         temp2 = Instantiate(ButtonstoInstantiate);
         //mal.SetActive(false);
         //bien.SetActive(false);
-        save.prueba();
+        
 
     }
     public void setNivelReto(int nivelReto){
         nR=nivelReto;
         Debug.Log(nR);
+       
     }
-
     public void instantiateObject(){
         Debug.Log("Objeto"+n);
     }
@@ -90,9 +91,24 @@ public class questionSelector : MonoBehaviour
         bool repetido=false;
         int indice=0;
         int m=Random.Range(0,4);
+        int z;
         while(indice<problemasTry.Length){
             repetido=false;
-            n= Random.Range(0,20);
+            switch(nR){
+                case 1:
+                Debug.Log("Reto 1");
+                n= Random.Range(0,5);
+                break;
+                case 2:
+                Debug.Log("Reto 2");
+                n= Random.Range(6,11);
+                break;
+                case 3:
+                Debug.Log("Reto 3");
+                n= Random.Range(12,19);
+                break;
+            }
+            /* n= Random.Range(0,19);  */
             for(int j=0; j<problemasTry.Length ;j++)
             {
                 
@@ -111,8 +127,7 @@ public class questionSelector : MonoBehaviour
                         imagenFrac = Instantiate(objectsToInstantiate[n], pos.position, pos.transform.rotation) as GameObject;
                         imagenFrac.transform.parent=pos.transform;
                     
-                        buttonFrac.GetComponent<Button>().onClick.AddListener(() => Invoke("seleccion", 1.0f));
-                        
+                        buttonFrac.GetComponent<Button>().onClick.AddListener(() => Invoke("seleccion", 1.0f));                        
                     
                 }else{
                     buttonFrac.GetComponent<Button>().onClick.AddListener(() => Invoke("malSeleccion", 1.0f));
@@ -127,7 +142,7 @@ public class questionSelector : MonoBehaviour
     {
         bien.SetActive(true);
         
-                mal.SetActive(false);
+        mal.SetActive(false);
         //SceneManager.LoadScene("seleccion");
 
         for (int h = 0; h < 4; h++)
@@ -145,9 +160,6 @@ public class questionSelector : MonoBehaviour
     public void malSeleccion()
     {
         mal.SetActive(true);
-        
-           
-
         for (int h = 0; h < 4; h++)
         {
             Destroy(buttonFrac = GameObject.Find("button" + h.ToString()));
@@ -156,6 +168,15 @@ public class questionSelector : MonoBehaviour
         // SceneManager.LoadScene("seleccion");
         Invoke("eliminar", 1.0f);
         print("Respuesta equivocada intenta otra vez");
+        if(nR==3){
+            intentos++;
+            if(intentos>=3){
+                Debug.Log("Lo siento, intenta el nivel de nuevo");
+                nR=1;
+                save.saveNivelReto();
+                SceneManager.LoadScene("GameScene");
+            }
+        }
     }
 
     public void eliminar()
@@ -171,7 +192,10 @@ public class questionSelector : MonoBehaviour
 
     public void escena()
     {
-        SceneManager.LoadScene("seleccion");
+        SceneManager.LoadScene("GameScene");
+    }
+    public int getNivelReto(){
+        return nR;
     }
 
     // Update is called once per frame
@@ -179,7 +203,10 @@ public class questionSelector : MonoBehaviour
     {
         if(problema>=3)
         {
-            SceneManager.LoadScene("seleccion");
+            SceneManager.LoadScene("GameScene");
+            nR++;
+            save.saveNivelReto();
         }
+        
     }
 }

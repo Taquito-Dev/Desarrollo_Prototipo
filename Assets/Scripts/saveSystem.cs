@@ -57,9 +57,16 @@ public class saveSystem : MonoBehaviour
     public void loadGameButton(){
         string userN=data.username;
         string contrasenaN=data.contrasena;
+    }
+    public void saveNivelReto(){
+        int nivelRetoN=reto0.getNivelReto();
+        data.reto=nivelRetoN;
+        saveGame(data);
+        Debug.Log("reto guardado");                            
+    }
+    public void loadNivelReto(){
         int nivelRetoN=data.reto;
         reto0.setNivelReto(nivelRetoN);
-
     }
     public void prueba(){
         Debug.Log("works");

@@ -7,6 +7,7 @@ public class Entrar : MonoBehaviour
 
     public GameObject canvas;
     public GameObject Texto;
+    public GameObject Win;
     private bool lugar;
 
     private void Update()

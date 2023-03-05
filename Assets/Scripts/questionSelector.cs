@@ -10,7 +10,7 @@ public class questionSelector : MonoBehaviour
 {
     
     public saveSystem save;
-     
+    
     public Text problemlabel;
     public Transform pos;
     public string[] problemasTry;

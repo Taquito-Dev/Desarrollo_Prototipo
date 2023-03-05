@@ -36,6 +36,8 @@ public class Igualar : MonoBehaviour
     float num;
     float deno;
 
+    [SerializeField] private Animator anim;
+
     public void operation()
     {
         mal.SetActive(false);
@@ -43,20 +45,20 @@ public class Igualar : MonoBehaviour
         operacion = new string[20];
         respuesta = new string[20];
         operacion[0] = "50%";
-        operacion[1] = "33%";
+        operacion[1] = "5%";
         operacion[2] = "25%";
         operacion[3] = "40%";
         operacion[4] = "80%";
         operacion[5] = "12.5%";
         operacion[6] = "175%";
-        operacion[7] = "33%";
+        operacion[7] = "60%";
         operacion[8] = "100%";
         operacion[9] = "25%";
         operacion[10] = "125%";
         operacion[11] = "66%";
         operacion[12] = "60%";
         operacion[13] = "20%";
-        operacion[14] = "11%";
+        operacion[14] = "10%";
         operacion[15] = "75%";
         operacion[16] = "100%";
         operacion[17] = "25%";
@@ -95,7 +97,7 @@ public class Igualar : MonoBehaviour
         num = float.Parse(numeradorI.text);
         deno = float.Parse(denominadorI.text);
 
-        //caso 1, 7 y 14 sale mal la respuesta
+        
 
         switch (m)
         {
@@ -104,7 +106,7 @@ public class Igualar : MonoBehaviour
                 Debug.Log("caso 1");
                 break;
             case 1:
-                respuestaCorrecta = 0.3333333f;
+                respuestaCorrecta = 0.05f;
                 Debug.Log("caso 2");
                 break;
             case 2:
@@ -128,7 +130,7 @@ public class Igualar : MonoBehaviour
                 Debug.Log("caso 7");
                 break;
             case 7:
-                respuestaCorrecta = 0.3333333f;
+                respuestaCorrecta = 0.6f;
                 Debug.Log("caso 8");
                 break;
             case 8:
@@ -156,7 +158,7 @@ public class Igualar : MonoBehaviour
                 Debug.Log("caso 14");
                 break;
             case 14:
-                respuestaCorrecta = 0.1111111f;
+                respuestaCorrecta = 0.1f;
                 Debug.Log("caso 15");
                 break;
             case 15:
@@ -192,6 +194,7 @@ public class Igualar : MonoBehaviour
             Debug.Log("Respues correcta");
             bien.SetActive(true);
             mal.SetActive(false);
+            anim.Play("Robot");
 
             problema++;
             if (problema >= 10)
@@ -212,6 +215,7 @@ public class Igualar : MonoBehaviour
     void Start()
     {
         operation();
+        //anim = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()

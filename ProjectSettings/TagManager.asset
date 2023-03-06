@@ -29,6 +29,7 @@ TagManager:
   - 1-3
   - askimage
   - MenuPausa
+  - magLabel
   layers:
   - Default
   - TransparentFX

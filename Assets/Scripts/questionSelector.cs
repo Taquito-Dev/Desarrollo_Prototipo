@@ -59,28 +59,29 @@ public class questionSelector : MonoBehaviour
     }
     public void randomButtons(){
         
-        problemas= new string[20];
-        problemasTry= new string[4];
-        problemas[0]="1/2"; 
-        problemas[1]="1/3";
-        problemas[2]="2/8";
-        problemas[3]="2/5";
-        problemas[4]="4/7";
-        problemas[5]="1/8";
-        problemas[6]="7/4"; 
-        problemas[7]="2/6";
-        problemas[8]="6/6";
-        problemas[9]="1/4";
-        problemas[10]="10/8";
-        problemas[11]="4/6";
-        problemas[12]="4/5"; 
-        problemas[13]="1/5";
-        problemas[14]="1/9";
-        problemas[15]="3/8";
-        problemas[16]="3/3";
-        problemas[17]="3/12";
-        problemas[18]="7/10"; 
-        problemas[19]="6/8";
+    problemas= new string[20];
+    problemasTry= new string[4];
+    problemas[0]="1/2";
+    problemas[1]="3/3";
+    problemas[2]="1/3";
+    problemas[3]="6/6";
+    problemas[4]="1/4";
+    problemas[5]="2/5";
+    problemas[6]="4/7";
+    problemas[7]="1/5";
+    problemas[8]="1/8";
+    problemas[9]="3/8";
+    problemas[10]="2/6";      	
+    problemas[11]="4/6";
+    problemas[12]="4/5";
+    problemas[13]="1/9";    	        
+    problemas[14]="3/12";
+    problemas[15]="7/10";
+    problemas[16]="6/8";
+    problemas[17]="2/8";
+    problemas[18]="7/4";
+    problemas[19]="10/8";
+
 
         problemasTry[0]=""; 
         problemasTry[1]="";
@@ -106,6 +107,9 @@ public class questionSelector : MonoBehaviour
                 case 3:
                 Debug.Log("Reto 3");
                 n= Random.Range(12,19);
+                break;
+                default:
+                n=Random.Range(0,19);
                 break;
             }
             /* n= Random.Range(0,19);  */

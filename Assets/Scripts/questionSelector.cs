@@ -178,7 +178,7 @@ public class questionSelector : MonoBehaviour
                 Debug.Log("Lo siento, intenta el nivel de nuevo");
                 nR=1;
                 save.saveNivelReto();
-                SceneManager.LoadScene("GameScene");
+                SceneManager.LoadScene("MensajeMal");
             }
         }
     }
@@ -196,7 +196,7 @@ public class questionSelector : MonoBehaviour
 
     public void escena()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("MensajeBien");
     }
     public int getNivelReto(){
         return nR;
@@ -207,7 +207,7 @@ public class questionSelector : MonoBehaviour
     {
         if(problema>=3)
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("MensajeBien");
             nR++;
             save.saveNivelReto();
         }

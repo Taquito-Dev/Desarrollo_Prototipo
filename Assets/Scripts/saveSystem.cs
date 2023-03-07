@@ -10,6 +10,7 @@ public class saveSystem : MonoBehaviour
     guardarnombre userscr;
     InitialData problemascr;
     questionSelector reto0;
+    escenaBoton mensajebien;
     string savePath;
 
     FinalizarNivel menu;
@@ -21,6 +22,7 @@ public class saveSystem : MonoBehaviour
         userscr=FindObjectOfType<guardarnombre>();
         reto0=FindObjectOfType<questionSelector>();
         menu = FindObjectOfType<FinalizarNivel>();
+        mensajebien=FindObjectOfType<escenaBoton>();
         savePath =Application.persistentDataPath+"/save.dat";
        
         if(!File.Exists(savePath)){ 
@@ -75,6 +77,10 @@ public class saveSystem : MonoBehaviour
     {
         int Nivelreto = data.reto;
         menu.setNivel(Nivelreto);
+    }
+    public void lnv(){
+        int nr=data.reto;
+        mensajebien.setNivel(nr);
     }
     public void prueba(){
         Debug.Log("works");

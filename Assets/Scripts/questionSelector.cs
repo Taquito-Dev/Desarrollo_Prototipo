@@ -122,7 +122,7 @@ public class questionSelector : MonoBehaviour
             }
                 if(!repetido){
                     problemasTry[indice]=problemas[n];
-                    buttonFrac = Instantiate(ButtonstoInstantiate,  new Vector2((indice+1)*180,200), pos.transform.rotation) as GameObject;  
+                    buttonFrac = Instantiate(ButtonstoInstantiate,  new Vector2((indice+1)*300,200), pos.transform.rotation) as GameObject;  
                     buttonFrac.name = ("button"+indice.ToString());
                     GameObject.Find("button"+indice.ToString()).GetComponentInChildren<Text>().text = problemasTry[indice];
                     buttonFrac.transform.parent=pos.transform;
@@ -172,7 +172,7 @@ public class questionSelector : MonoBehaviour
         // SceneManager.LoadScene("seleccion");
         Invoke("eliminar", 1.0f);
         print("Respuesta equivocada intenta otra vez");
-        if(nR==3){
+        if(nR>3){
             intentos++;
             if(intentos>=3){
                 Debug.Log("Lo siento, intenta el nivel de nuevo");

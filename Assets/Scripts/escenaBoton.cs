@@ -5,10 +5,30 @@ using UnityEngine.SceneManagement;
 
 
 public class escenaBoton : MonoBehaviour
-{
+{   
+    saveSystem save;
+    int nr=0;
+
+    public void Awake(){
+        save=FindObjectOfType<saveSystem>();
+    }
+    void Start(){
+        save.lnv();
+    }
+    public void setNivel(int NivelReto){
+        nr=NivelReto;
+        Debug.Log(nr);
+    }
+
     public void otroLado(string donde)
     {
-        SceneManager.LoadScene(donde);
+        if(nr==4){
+           SceneManager.LoadScene(donde); 
+        }
+        else{
+            SceneManager.LoadScene("seleccion"); 
+        }
+        
     }
 
     public void Salir()

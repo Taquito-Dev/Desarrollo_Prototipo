@@ -39,6 +39,7 @@ public class Login : MonoBehaviour
                 print(servidor.respuesta.mensaje);
                 break;
             case 205: // Inicio de secion correcto
+                      //
                       SceneManager.LoadScene("GameScene");
                 usuarioDatos = JsonUtility.FromJson<DBUsuario>(servidor.respuesta.respuesta);
                 break;

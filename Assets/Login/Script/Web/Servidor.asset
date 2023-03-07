@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c6daa3db0f5d349bb8b03c31c93f47, type: 3}
+  m_Name: Servidor
+  m_EditorClassIdentifier: 
+  servidor: http://localhost/jugadoredm
+  servicios:
+  - nombre: login
+    URL: login.php
+    parametros:
+    - usuario
+    - contrasena
+  - nombre: check
+    URL: check.php
+    parametros: []
+  - nombre: registrarUsuario
+    URL: registrarUsuario.php
+    parametros:
+    - usuario
+    - contrasena
+  ocupado: 0
+  respuesta:
+    codigo: 205
+    mensaje: Inicio de secion correcto
+    respuesta: '{"id":3,"usuario":"jj","contrasena":"123"}'

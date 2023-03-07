@@ -174,7 +174,7 @@ public class questionSelector : MonoBehaviour
         print("Respuesta equivocada intenta otra vez");
         if(nR>3){
             intentos++;
-            if(intentos>=3){
+            if(intentos==3){
                 Debug.Log("Lo siento, intenta el nivel de nuevo");
                 nR=1;
                 save.saveNivelReto();

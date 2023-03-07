@@ -20,7 +20,7 @@ public class FinalizarNivel : MonoBehaviour
         reto = retos;
         Debug.Log(reto);
 
-        switch(reto){
+        switch(reto=0){
             case 1: 
             completado.text="30% Completado";
             break;

@@ -4836,6 +4836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 236503110}
   Texto: {fileID: 594712083}
+  Win: {fileID: 0}
 --- !u!1 &2031938844
 GameObject:
   m_ObjectHideFlags: 0

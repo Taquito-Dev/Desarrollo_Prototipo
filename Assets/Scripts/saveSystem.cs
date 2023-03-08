@@ -98,7 +98,7 @@ public class saveSystem : MonoBehaviour
 
     public void otroLado(string donde)
     {
-        if(data.reto==4||data.reto==7||data.reto==10||data.reto==13||data.reto==16){
+        if(data.reto>3){
                 SceneManager.LoadScene(donde);  
         }
         else{

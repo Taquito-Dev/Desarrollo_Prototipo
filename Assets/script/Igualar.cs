@@ -124,6 +124,7 @@ public class Igualar : MonoBehaviour
         //m = Random.Range(0, 19);
         //operaciontxt.text = operacion[m];
         Debug.Log(m);
+        anim.SetBool("AD", false);
     }
 
     public void comparacion()
@@ -228,7 +229,7 @@ public class Igualar : MonoBehaviour
             Debug.Log("Respues correcta");
             bien.SetActive(true);
             mal.SetActive(false);
-            anim.Play("robot");
+            anim.SetBool("AD", true);
 
             problema++;
             if (problema >= 3)
@@ -246,6 +247,8 @@ public class Igualar : MonoBehaviour
             Debug.Log("Respuesta Incorrecta");
             Invoke("operation", 2f);
         }
+
+        //anim.SetBool("AD", false);
     }
 
     public void setNivelReto4(int nivelReto4)

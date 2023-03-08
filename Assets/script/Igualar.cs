@@ -39,6 +39,9 @@ public class Igualar : MonoBehaviour
 
     public Animator anim;
 
+    public saveSystem save;
+    int nR = 1;
+
     public void operation()
     {
         mal.SetActive(false);
@@ -46,24 +49,24 @@ public class Igualar : MonoBehaviour
         operacion = new string[20];
         respuesta = new string[20];
         operacion[0] = "50%";
-        operacion[1] = "5%";
+        operacion[1] = "100%";
         operacion[2] = "25%";
         operacion[3] = "40%";
         operacion[4] = "80%";
-        operacion[5] = "12.5%";
-        operacion[6] = "175%";
+        operacion[5] = "25%";
+        operacion[6] = "100%";
         operacion[7] = "60%";
-        operacion[8] = "100%";
-        operacion[9] = "25%";
-        operacion[10] = "125%";
-        operacion[11] = "66%";
+        operacion[8] = "25%";
+        operacion[9] = "75%";
+        operacion[10] = "70%";
+        operacion[11] = "10%";
         operacion[12] = "60%";
         operacion[13] = "20%";
-        operacion[14] = "10%";
-        operacion[15] = "75%";
-        operacion[16] = "100%";
-        operacion[17] = "25%";
-        operacion[18] = "70%";
+        operacion[14] = "66%";
+        operacion[15] = "125%";
+        operacion[16] = "175%";
+        operacion[17] = "5%";
+        operacion[18] = "12.5%";
         operacion[19] = "87.5%";
 
         respuesta[0] = "12/5";
@@ -87,9 +90,21 @@ public class Igualar : MonoBehaviour
         respuesta[18] = "10";
         respuesta[19] = "4/4";
 
+        if (problema <= 2)
+        {
+            m = Random.Range(0, 13);
+            operaciontxt.text = operacion[m];
+            Debug.Log("0 al 13");
+        }
+        else if (problema >= 3)
+        {
+            m = Random.Range(14, 19);
+            operaciontxt.text = operacion[m];
+            Debug.Log("14 al 19");
+        }
 
-        m = Random.Range(0, 19);
-        operaciontxt.text = operacion[m];
+            //m = Random.Range(0, 19);
+        //operaciontxt.text = operacion[m];
         Debug.Log(m);
     }
 
@@ -107,7 +122,7 @@ public class Igualar : MonoBehaviour
                 Debug.Log("caso 1");
                 break;
             case 1:
-                respuestaCorrecta = 0.05f;
+                respuestaCorrecta = 1f;
                 Debug.Log("caso 2");
                 break;
             case 2:
@@ -123,11 +138,11 @@ public class Igualar : MonoBehaviour
                 Debug.Log("caso 5");
                 break;
             case 5:
-                respuestaCorrecta = 0.125f;
+                respuestaCorrecta = 0.25f;
                 Debug.Log("caso 6");
                 break;
             case 6:
-                respuestaCorrecta = 1.75f;
+                respuestaCorrecta = 1f;
                 Debug.Log("caso 7");
                 break;
             case 7:
@@ -135,19 +150,19 @@ public class Igualar : MonoBehaviour
                 Debug.Log("caso 8");
                 break;
             case 8:
-                respuestaCorrecta = 1f;
+                respuestaCorrecta = 0.25f;
                 Debug.Log("caso 9");
                 break;
             case 9:
-                respuestaCorrecta = 0.25f;
+                respuestaCorrecta = 0.75f;
                 Debug.Log("caso 10");
                 break;
             case 10:
-                respuestaCorrecta = 1.25f;
+                respuestaCorrecta = 0.7f;
                 Debug.Log("caso 11");
                 break;
             case 11:
-                respuestaCorrecta = 0.6666667f;
+                respuestaCorrecta = 0.1f;
                 Debug.Log("caso 12");
                 break;
             case 12:
@@ -159,23 +174,23 @@ public class Igualar : MonoBehaviour
                 Debug.Log("caso 14");
                 break;
             case 14:
-                respuestaCorrecta = 0.1f;
+                respuestaCorrecta = 0.6666667f;
                 Debug.Log("caso 15");
                 break;
             case 15:
-                respuestaCorrecta = 0.75f;
+                respuestaCorrecta = 1.25f;
                 Debug.Log("caso 16");
                 break;
             case 16:
-                respuestaCorrecta = 1f;
+                respuestaCorrecta = 1.75f;
                 Debug.Log("caso 17");
                 break;
             case 17:
-                respuestaCorrecta = 0.25f;
+                respuestaCorrecta = 0.05f;
                 Debug.Log("caso 18");
                 break;
             case 18:
-                respuestaCorrecta = 0.7f;
+                respuestaCorrecta = 0.125f;
                 Debug.Log("caso 19");
                 break;
             case 19:
@@ -198,9 +213,11 @@ public class Igualar : MonoBehaviour
             anim.Play("robot");
 
             problema++;
-            if (problema >= 10)
+            if (problema >= 3)
             {
                 SceneManager.LoadScene("Reto");
+                nR++;
+                save.saveNivelReto4();
             }
             Invoke("operation", 2f);
         }
@@ -213,10 +230,23 @@ public class Igualar : MonoBehaviour
         }
     }
 
+    public void setNivelReto4(int nivelReto4)
+    {
+        nR = nivelReto4;
+        Debug.Log(nR);
+
+    }
+
+    public int getNivelReto4()
+    {
+        return nR;
+    }
+
     void Start()
     {
         operation();
         //anim = gameObject.GetComponent<Animator>();
+        save.loadNivelReto4();
     }
     // Update is called once per frame
     void Update()

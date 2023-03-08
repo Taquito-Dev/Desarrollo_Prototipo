@@ -35,12 +35,12 @@ public class Login : MonoBehaviour
     {
         switch (servidor.respuesta.codigo)
         {
-            case 204: // El Usuario y/o la contraseña son incorrectos
+            case 204: // El Usuario y/o la contrasena son incorrectos
                 print(servidor.respuesta.mensaje);
                 break;
             case 205: // Inicio de secion correcto
                       //
-                      SceneManager.LoadScene("GameScene");
+                      SceneManager.LoadScene("Main_Menu");
                 usuarioDatos = JsonUtility.FromJson<DBUsuario>(servidor.respuesta.respuesta);
                 break;
             case 402: // Faltan datos para realizar la accion solicitada

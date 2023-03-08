@@ -10,7 +10,7 @@ public class questionSelector : MonoBehaviour
 {
     
     public saveSystem save;
-     
+    
     public Text problemlabel;
     public Transform pos;
     public string[] problemasTry;
@@ -41,12 +41,16 @@ public class questionSelector : MonoBehaviour
     void Start()
     {
         save.loadNivelReto();
-        randomButtons();
+        randomButtons();        
         temp = Instantiate(objectsToInstantiate[n]);
         temp2 = Instantiate(ButtonstoInstantiate);
         //mal.SetActive(false);
         //bien.SetActive(false);
-        
+
+
+        /* nR=1;
+        save.saveNivelReto(); */
+        //Descomentar esta codigo y ejecutar el videojuego para reiniciar el reto
 
     }
     public void setNivelReto(int nivelReto){
@@ -59,28 +63,29 @@ public class questionSelector : MonoBehaviour
     }
     public void randomButtons(){
         
-        problemas= new string[20];
-        problemasTry= new string[4];
-        problemas[0]="1/2"; 
-        problemas[1]="1/3";
-        problemas[2]="2/8";
-        problemas[3]="2/5";
-        problemas[4]="4/7";
-        problemas[5]="1/8";
-        problemas[6]="7/4"; 
-        problemas[7]="2/6";
-        problemas[8]="6/6";
-        problemas[9]="1/4";
-        problemas[10]="10/8";
-        problemas[11]="4/6";
-        problemas[12]="4/5"; 
-        problemas[13]="1/5";
-        problemas[14]="1/9";
-        problemas[15]="3/8";
-        problemas[16]="3/3";
-        problemas[17]="3/12";
-        problemas[18]="7/10"; 
-        problemas[19]="6/8";
+    problemas= new string[20];
+    problemasTry= new string[4];
+    problemas[0]="1/2";
+    problemas[1]="3/3";
+    problemas[2]="1/3";
+    problemas[3]="6/6";
+    problemas[4]="1/4";
+    problemas[5]="2/5";
+    problemas[6]="4/7";
+    problemas[7]="1/5";
+    problemas[8]="1/8";
+    problemas[9]="3/8";
+    problemas[10]="2/6";      	
+    problemas[11]="4/6";
+    problemas[12]="4/5";
+    problemas[13]="1/9";    	        
+    problemas[14]="3/12";
+    problemas[15]="7/10";
+    problemas[16]="6/8";
+    problemas[17]="2/8";
+    problemas[18]="7/4";
+    problemas[19]="10/8";
+
 
         problemasTry[0]=""; 
         problemasTry[1]="";
@@ -107,6 +112,9 @@ public class questionSelector : MonoBehaviour
                 Debug.Log("Reto 3");
                 n= Random.Range(12,19);
                 break;
+                default:
+                n=Random.Range(0,19);
+                break;
             }
             /* n= Random.Range(0,19);  */
             for(int j=0; j<problemasTry.Length ;j++)
@@ -118,7 +126,7 @@ public class questionSelector : MonoBehaviour
             }
                 if(!repetido){
                     problemasTry[indice]=problemas[n];
-                    buttonFrac = Instantiate(ButtonstoInstantiate,  new Vector2((indice+1)*180,200), pos.transform.rotation) as GameObject;  
+                    buttonFrac = Instantiate(ButtonstoInstantiate,  new Vector2((indice+1)*300,200), pos.transform.rotation) as GameObject;  
                     buttonFrac.name = ("button"+indice.ToString());
                     GameObject.Find("button"+indice.ToString()).GetComponentInChildren<Text>().text = problemasTry[indice];
                     buttonFrac.transform.parent=pos.transform;
@@ -168,13 +176,13 @@ public class questionSelector : MonoBehaviour
         // SceneManager.LoadScene("seleccion");
         Invoke("eliminar", 1.0f);
         print("Respuesta equivocada intenta otra vez");
-        if(nR==3){
+        if(nR>3){
             intentos++;
-            if(intentos>=3){
+            if(intentos==3){
                 Debug.Log("Lo siento, intenta el nivel de nuevo");
                 nR=1;
                 save.saveNivelReto();
-                SceneManager.LoadScene("GameScene");
+                SceneManager.LoadScene("MensajeMal");
             }
         }
     }
@@ -192,7 +200,7 @@ public class questionSelector : MonoBehaviour
 
     public void escena()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("MensajeBien");
     }
     public int getNivelReto(){
         return nR;
@@ -203,7 +211,7 @@ public class questionSelector : MonoBehaviour
     {
         if(problema>=3)
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("MensajeBien");
             nR++;
             save.saveNivelReto();
         }

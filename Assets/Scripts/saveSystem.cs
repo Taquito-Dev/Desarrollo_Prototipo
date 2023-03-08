@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class saveSystem : MonoBehaviour
 {
@@ -10,15 +11,19 @@ public class saveSystem : MonoBehaviour
     guardarnombre userscr;
     InitialData problemascr;
     questionSelector reto0;
-    string savePath; 
+    
+    string savePath;
+
+    FinalizarNivel menu;
 
     saveData data;
 
     public void Awake(){
         
         userscr=FindObjectOfType<guardarnombre>();
-        reto0=FindObjectOfType<questionSelector>();  
-        savePath=Application.persistentDataPath+"/save.dat";
+        reto0=FindObjectOfType<questionSelector>();
+        menu = FindObjectOfType<FinalizarNivel>();
+        savePath =Application.persistentDataPath+"/save.dat";
        
         if(!File.Exists(savePath)){ 
             
@@ -68,6 +73,15 @@ public class saveSystem : MonoBehaviour
         int nivelRetoN=data.reto;
         reto0.setNivelReto(nivelRetoN);
     }
+    public void loadNivelRetoMenu()
+    {
+        int Nivelreto = data.reto;
+        menu.setNivel(Nivelreto);
+    }
+    public void lnv(){
+        int nr=data.reto;
+       
+    }
     public void prueba(){
         Debug.Log("works");
     }
@@ -79,4 +93,22 @@ public class saveSystem : MonoBehaviour
             public int reto;
             public float puntaje;
     }
+
+
+
+    public void otroLado(string donde)
+    {
+        if(data.reto>3){
+                SceneManager.LoadScene(donde);  
+        }
+        else{
+            SceneManager.LoadScene("seleccion"); 
+        }
+        
+    }
+
+
+
+
+
 }

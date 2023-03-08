@@ -41,12 +41,16 @@ public class questionSelector : MonoBehaviour
     void Start()
     {
         save.loadNivelReto();
-        randomButtons();
+        randomButtons();        
         temp = Instantiate(objectsToInstantiate[n]);
         temp2 = Instantiate(ButtonstoInstantiate);
         //mal.SetActive(false);
         //bien.SetActive(false);
-        
+
+
+        /* nR=1;
+        save.saveNivelReto(); */
+        //Descomentar esta codigo y ejecutar el videojuego para reiniciar el reto
 
     }
     public void setNivelReto(int nivelReto){

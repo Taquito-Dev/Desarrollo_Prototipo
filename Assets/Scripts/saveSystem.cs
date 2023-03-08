@@ -11,7 +11,8 @@ public class saveSystem : MonoBehaviour
     guardarnombre userscr;
     InitialData problemascr;
     questionSelector reto0;
-    
+    Igualar retoN;
+
     string savePath;
 
     FinalizarNivel menu;
@@ -23,6 +24,7 @@ public class saveSystem : MonoBehaviour
         userscr=FindObjectOfType<guardarnombre>();
         reto0=FindObjectOfType<questionSelector>();
         menu = FindObjectOfType<FinalizarNivel>();
+        retoN = FindObjectOfType<Igualar>();
         savePath =Application.persistentDataPath+"/save.dat";
        
         if(!File.Exists(savePath)){ 
@@ -78,6 +80,21 @@ public class saveSystem : MonoBehaviour
         int Nivelreto = data.reto;
         menu.setNivel(Nivelreto);
     }
+
+    public void saveNivelReto4()
+    {
+        int nivelReto5 = retoN.getNivelReto4();
+        data.reto = nivelReto5;
+        saveGame(data);
+        Debug.Log("reto guardado 4");
+    }
+    public void loadNivelReto4()
+    {
+        int nivelReto5 = data.reto;
+        retoN.setNivelReto4(nivelReto5);
+    }
+
+
     public void lnv(){
         int nr=data.reto;
        

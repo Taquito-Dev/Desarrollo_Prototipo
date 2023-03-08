@@ -176,7 +176,7 @@ public class questionSelector : MonoBehaviour
         // SceneManager.LoadScene("seleccion");
         Invoke("eliminar", 1.0f);
         print("Respuesta equivocada intenta otra vez");
-        if(nR>3){
+        if(nR==3){
             intentos++;
             if(intentos==3){
                 Debug.Log("Lo siento, intenta el nivel de nuevo");

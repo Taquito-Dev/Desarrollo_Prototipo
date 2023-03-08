@@ -40,7 +40,7 @@ public class Igualar : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 1;
+    int nR = 10;
 
     public void operation()
     {
@@ -96,14 +96,32 @@ public class Igualar : MonoBehaviour
             operaciontxt.text = operacion[m];
             Debug.Log("0 al 13");
         }
-        else if (problema >= 3)
+        else if (problema == 3)
+        {
+            m = Random.Range(14, 19);
+            operaciontxt.text = operacion[m];
+            Debug.Log("14 al 19");
+        }
+        else if (problema <= 1 & nR==11)
+        {
+            m = Random.Range(0, 13);
+            operaciontxt.text = operacion[m];
+            Debug.Log("0 al 13");
+        }
+        else if (problema >= 2 & nR == 11)
+        {
+            m = Random.Range(14, 19);
+            operaciontxt.text = operacion[m];
+            Debug.Log("14 al 19");
+        }
+        else if (problema >= 2 & nR == 12)
         {
             m = Random.Range(14, 19);
             operaciontxt.text = operacion[m];
             Debug.Log("14 al 19");
         }
 
-            //m = Random.Range(0, 19);
+        //m = Random.Range(0, 19);
         //operaciontxt.text = operacion[m];
         Debug.Log(m);
     }
@@ -215,7 +233,7 @@ public class Igualar : MonoBehaviour
             problema++;
             if (problema >= 3)
             {
-                SceneManager.LoadScene("Reto");
+                SceneManager.LoadScene("MensajeBien");
                 nR++;
                 save.saveNivelReto4();
             }
@@ -240,6 +258,11 @@ public class Igualar : MonoBehaviour
     public int getNivelReto4()
     {
         return nR;
+    }
+
+    public void escena()
+    {
+        SceneManager.LoadScene("MensajeBien");
     }
 
     void Start()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.5177, y: -78}
-  m_SizeDelta: {x: 3271.1519, y: 33.0425}
+  m_AnchoredPosition: {x: 3.5177002, y: -343}
+  m_SizeDelta: {x: 7798.0796, y: 635.3096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210928252
 MonoBehaviour:
@@ -183,26 +183,26 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f4a632bb47fd9a340921d8ee9403f18a, type: 3}
-    m_FontSize: 67
+    m_FontSize: 100
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Nuestro personaje \u201CCarel\u201D empieza en su habitaci\xF3n, donde
-    est\xE1 ansioso de conocer las \nnovedades que tendr\xE1 el canal de su VTuber
+    est\xE1 ansioso de conocer las novedades que tendr\xE1 el canal de su VTuber
     favorito Dr. IT (Industrial transformation). \nAnsioso por conocer la nueva publicaci\xF3n,
-    est\xE1 en espera de que se active el directo, ya \nque en las sesiones anteriores
-    estuvieron viendo las ventajas de los asistentes tecnol\xF3gicos \nutilizados
-    en diferentes industrias. A nuestro personaje le gusta mucho la capacidad de
-    \ndesarrollo que tiene el ser humano, sobre todo en la ciencia ficci\xF3n, ya
-    que, desde hace \nmucho, los robots son parte de la mayor\xEDa de las historias,
-    pero no encuentra a ninguno \nque sea tan funcional como en esas historias.\n\n"
+    est\xE1 en espera de que se active el directo, ya que en las sesiones anteriores
+    estuvieron viendo las ventajas de los asistentes tecnol\xF3gicos utilizados en
+    diferentes industrias. A nuestro personaje le gusta mucho la capacidad de desarrollo
+    que tiene el ser humano, sobre todo en la ciencia ficci\xF3n, ya que, desde hace
+    mucho, los robots son parte de la mayor\xEDa de las historias, pero no encuentra
+    a ninguno que sea tan funcional como en esas historias."
 --- !u!222 &210928253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -250,8 +250,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -305, y: -224}
-  m_SizeDelta: {x: 208.9, y: 74.66742}
+  m_AnchoredPosition: {x: -780, y: -469}
+  m_SizeDelta: {x: 210, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &235130144
 MonoBehaviour:
@@ -388,14 +388,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 515941113}
   m_Father: {fileID: 790021171}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -144.20319}
-  m_SizeDelta: {x: 0, y: -337.2888}
+  m_AnchoredPosition: {x: 0, y: -341.7698}
+  m_SizeDelta: {x: -73.668, y: -821.2685}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &266027533
 MonoBehaviour:
@@ -410,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -514,6 +515,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397231224}
+  m_CullTransparentMesh: 1
+--- !u!1 &515941112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 515941113}
+  - component: {fileID: 515941115}
+  - component: {fileID: 515941114}
+  m_Layer: 5
+  m_Name: PanelIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &515941113
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515941112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 266027532}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -681, y: 136}
+  m_SizeDelta: {x: -1473.2279, y: -198.1398}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &515941114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515941112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.32941177, g: 0.7019608, b: 0.8588236, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &515941115
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515941112}
   m_CullTransparentMesh: 1
 --- !u!1 &614799919
 GameObject:
@@ -731,8 +808,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.5177, y: 200}
-  m_SizeDelta: {x: 3271.1519, y: 33.0425}
+  m_AnchoredPosition: {x: -677, y: -209.09}
+  m_SizeDelta: {x: 1487.3862, y: 367.4991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &796449451
 MonoBehaviour:
@@ -895,8 +972,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000038147, y: 0}
+  m_SizeDelta: {x: -73.668, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114671562
 MonoBehaviour:
@@ -1502,8 +1579,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 286, y: -224}
-  m_SizeDelta: {x: 208.9, y: 74.66742}
+  m_AnchoredPosition: {x: 770, y: -469}
+  m_SizeDelta: {x: 210, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2139854931
 MonoBehaviour:

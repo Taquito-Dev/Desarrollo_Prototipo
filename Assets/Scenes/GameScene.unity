@@ -378,6 +378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   save: {fileID: 8807406}
   completado: {fileID: 2073429167}
+  nR: {fileID: 0}
+  item2: {fileID: 1260794348}
 --- !u!4 &8807408
 Transform:
   m_ObjectHideFlags: 0
@@ -5194,7 +5196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260794348}
   m_LocalRotation: {x: -0.69045603, y: -0.16071622, z: 0.10591504, w: 0.6972968}
-  m_LocalPosition: {x: -0.10696411, y: -1.0549774, z: -4.816001}
+  m_LocalPosition: {x: -0.10696411, y: -1.0549774, z: -15.37}
   m_LocalScale: {x: 10.360877, y: 10.360879, z: 10.360882}
   m_ConstrainProportionsScale: 0
   m_Children: []

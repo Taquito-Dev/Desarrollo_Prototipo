@@ -8,11 +8,20 @@ public class FinalizarNivel : MonoBehaviour
     public saveSystem save;
     public TMP_Text completado;
     int reto;
+    public questionSelector nR;
+
+    public GameObject item2;
 
     // Start is called before the first frame update
     void Start()
     {
+        item2.SetActive(false);
         save.loadNivelRetoMenu();
+
+        if(questionSelector.nR==4)
+        {
+            item2.SetActive(true);
+        }
     }
 
     public void setNivel(int retos)

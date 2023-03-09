@@ -28,7 +28,7 @@ public class questionSelector : MonoBehaviour
 
     float time;
     float timeDelay;
-    int nR=1;
+    public static int nR =1;
 
     public TMP_Text puntos;
     

@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Creditos.unity
     guid: c063b216ba5bb1f4ebb61e56931cdbb4
   - enabled: 1
-    path: Assets/Scenes/Jugabilidad.unity
-    guid: c599a572b335fb14d96901c6d1acc34f
-  - enabled: 1
     path: Assets/Scenes/CineIntroOne.unity
     guid: 8db3df5e528dd8047a8425ab307ee204
   - enabled: 1

@@ -197,6 +197,12 @@ public class triggerRespuesta : MonoBehaviour
         mal.SetActive(false);
         SceneManager.LoadScene("Reto");
     }
+    public void SceneGod()
+    {
+        bien.SetActive(false);
+        mal.SetActive(false);
+        SceneManager.LoadScene("GameScene");
+    }
 
     // Update is called once per frame
     void Update()
@@ -211,7 +217,7 @@ public class triggerRespuesta : MonoBehaviour
         porc.text="Listo";
             bien.SetActive(true);
             mal.SetActive(false);
-            Invoke("Scene", 2.0f);
+            Invoke("SceneGod", 2.0f);
     }
     else{
             percent=porcentaje*100/2;

@@ -68,7 +68,7 @@ public class questionSelector : MonoBehaviour
     problemas[0]="1─2";
     problemas[1]="3─3";
     problemas[2]="1─3";
-     problemas[3]="1─8";
+    problemas[3]="1─8";
     problemas[4]="1─4";
     problemas[5]="2─5";
     problemas[6]="4─7";

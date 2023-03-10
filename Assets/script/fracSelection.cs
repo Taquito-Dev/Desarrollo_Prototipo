@@ -17,12 +17,12 @@ public class fracSelection : MonoBehaviour
     void generate(){
         
         
-        Instantiate(objectsToInstantiate[0], new Vector3(-8f,1f,-.24f), pos.transform.rotation);
+        Instantiate(objectsToInstantiate[0], new Vector3(-7.5f,1f,-.24f), pos.transform.rotation);
         for(int i=0; i<8;i++){
             frac=Random.Range(0,objectsToInstantiate.Length);
-            Instantiate(objectsToInstantiate[frac], new Vector3(-7f+i*.9f,1f,-.24f), pos.transform.rotation);
+            Instantiate(objectsToInstantiate[frac], new Vector3(-7f+i*2f,1f,-.24f), pos.transform.rotation);
         }
-        Instantiate(objectsToInstantiate[0], new Vector3(1f,1f,-.24f), pos.transform.rotation);
+        Instantiate(objectsToInstantiate[0], new Vector3(1f,3f,-.24f), pos.transform.rotation);
     }
 
     // Update is called once per frame

@@ -15,26 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Creditos.unity
     guid: c063b216ba5bb1f4ebb61e56931cdbb4
   - enabled: 1
+    path: Assets/Scenes/Personajes.unity
+    guid: d65b14bbf16991b47a0e61c4cab8a512
+  - enabled: 1
     path: "Assets/Scenes/CineNi\xF1a.unity"
     guid: 8db3df5e528dd8047a8425ab307ee204
   - enabled: 1
     path: "Assets/Scenes/CineNi\xF1o.unity"
     guid: 92edcf667c75d6e4e93254dc61e31596
-  - enabled: 1
-    path: Assets/Scenes/CineIntroThree.unity
-    guid: 57c0dd68d67b5f3469c9929059faa629
-  - enabled: 1
-    path: Assets/Scenes/CineIntroFour.unity
-    guid: 676d984171a1016468c952ebc42a8ee1
-  - enabled: 1
-    path: Assets/Scenes/CineIntroFive.unity
-    guid: 0f395e8d7d308b046a0ef2e9e38799d8
-  - enabled: 1
-    path: Assets/Scenes/CineIntroSix.unity
-    guid: a2410d0605210094598d76322db33406
-  - enabled: 1
-    path: Assets/Scenes/GenderSelect.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 400df5c045bb89f43b02d3b79e564388

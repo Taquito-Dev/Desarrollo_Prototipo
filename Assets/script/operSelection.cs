@@ -188,7 +188,7 @@ public class operSelection : MonoBehaviour
             _dropPlanos.GeneraPlanoDoblado();
 
             problema++;
-            if (problema >= 10)
+            if (problema >= 2)
             {
                 SceneManager.LoadScene("Reto");
             }

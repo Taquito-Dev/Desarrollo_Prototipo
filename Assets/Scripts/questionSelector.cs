@@ -68,12 +68,12 @@ public class questionSelector : MonoBehaviour
     problemas[0]="1─2";
     problemas[1]="3─3";
     problemas[2]="1─3";
-    problemas[3]="6─6";
+     problemas[3]="1─8";
     problemas[4]="1─4";
     problemas[5]="2─5";
     problemas[6]="4─7";
     problemas[7]="1─5";
-    problemas[8]="1─8";
+    problemas[8]="6─6";   
     problemas[9]="3─8";
     problemas[10]="2─6";      	
     problemas[11]="4─6";

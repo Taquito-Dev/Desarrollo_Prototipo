@@ -5,7 +5,8 @@ using UnityEngine;
 public class dropPlanos : MonoBehaviour
 {
     public GameObject[] objectsToInstantiate;
-    public int frac;
+    public GameObject[] planoDoblado;
+    //public int frac;
     public Transform pos;
 
 
@@ -22,6 +23,11 @@ public class dropPlanos : MonoBehaviour
         //    frac = Random.Range(0, objectsToInstantiate.Length);
         //    Instantiate(objectsToInstantiate[frac], new Vector3(-7f + i * .8f, 1f, -.24f), pos.transform.rotation);
         //}
+    }
+
+    public void GeneraPlanoDoblado()
+    {
+        Instantiate(planoDoblado[0], new Vector3(0.8f, 1.256f, -8.319f), pos.transform.rotation);
     }
 
 

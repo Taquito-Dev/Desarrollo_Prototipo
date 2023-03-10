@@ -11,7 +11,7 @@ public class operSelection : MonoBehaviour
     public string[] respuesta;
     public int m;
 
-    public GameObject Canvas;
+    //public GameObject operacionCanvas;
     public GameObject plataforma;
     public colocarPlano _colocarPlano;
     public dropPlanos _dropPlanos;
@@ -185,6 +185,7 @@ public class operSelection : MonoBehaviour
             plataforma.gameObject.SetActive(true);
             _colocarPlano.DesactivarCanvas();
             _dropPlanos.GenerarPlano();
+            _dropPlanos.GeneraPlanoDoblado();
 
             problema++;
             if (problema >= 10)

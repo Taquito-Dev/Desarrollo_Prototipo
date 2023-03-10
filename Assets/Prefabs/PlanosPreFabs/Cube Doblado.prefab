@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 1365216517327117558}
   - component: {fileID: 1365216517327117557}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Plano
+  m_Name: Cube Doblado
+  m_TagString: Plano2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5998004595915773402, guid: 1ec467a46f3b5364cae643f1f6566827, type: 3}
+  - {fileID: 2100000, guid: e4a82219d6fd11a4b9f0b3c5b778e43f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

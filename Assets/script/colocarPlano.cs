@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class colocarPlano : MonoBehaviour
 {
-    public GameObject Canvas;
+    public GameObject operacionCanvas;
     public GameObject PR;
-    public Transform pos;
-    public GameObject plataforma;
+    //public Transform pos;
+    //public GameObject plataforma;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,29 +24,31 @@ public class colocarPlano : MonoBehaviour
         {
             case "Plano":
                 PR = GameObject.FindGameObjectWithTag("Plano");
+                Destroy(PR, .5f);
                 ActivarCanvas();
-                other.transform.position = new Vector3(0.8f, 1.256f, -8.42f);
-                PR.GetComponent<Renderer>().enabled = false;
-                other.tag = other.tag = "Plano2";
+                
+                //other.transform.position = new Vector3(0.8f, 1.256f, -8.42f);
+                //PR.GetComponent<Renderer>().enabled = false;
+                //other.tag = other.tag = "Plano2";
                 break;
 
             case "Plano2":
-                PR = GameObject.FindGameObjectWithTag("Plano2");
-                PR.GetComponent<Renderer>().enabled = true;
-                other.tag = other.tag = "Plano3";
-                plataforma.gameObject.SetActive(false);
-                print("Hola");
+                //PR = GameObject.FindGameObjectWithTag("Plano2");
+                //PR.GetComponent<Renderer>().enabled = true;
+                //other.tag = other.tag = "Plano3";
+                //plataforma.gameObject.SetActive(false);
+                //print("Hola");
                 break;
         }
        
     }
     public void ActivarCanvas()
     {
-        Canvas.gameObject.SetActive(true);
+        operacionCanvas.gameObject.SetActive(true);
     }
     public void DesactivarCanvas()
     {
-        Canvas.gameObject.SetActive(false);
+        operacionCanvas.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

@@ -190,12 +190,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7414256883413338672, guid: 17cd07db578725143ad40bf16017bdb7, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7414256883413338672, guid: 17cd07db578725143ad40bf16017bdb7, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17cd07db578725143ad40bf16017bdb7, type: 3}
 --- !u!1 &92002452 stripped
 GameObject:
@@ -420,16 +415,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Masculino
       objectReference: {fileID: 0}
-    - target: {fileID: 1971580744009891231, guid: f155a3f3ab0febe4ab910cb28fde8991, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6566680177993472625, guid: f155a3f3ab0febe4ab910cb28fde8991, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1971580744009891231, guid: f155a3f3ab0febe4ab910cb28fde8991, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f155a3f3ab0febe4ab910cb28fde8991, type: 3}
 --- !u!1 &373607345 stripped
 GameObject:
@@ -1816,6 +1806,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 241837877}
     m_Modifications:
+    - target: {fileID: 1197999620003481850, guid: 17cd07db578725143ad40bf16017bdb7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1383250990682271178, guid: 17cd07db578725143ad40bf16017bdb7, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1878,6 +1872,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 241837877}
     m_Modifications:
+    - target: {fileID: 130961397752787756, guid: f155a3f3ab0febe4ab910cb28fde8991, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6968896159182067266, guid: f155a3f3ab0febe4ab910cb28fde8991, type: 3}
       propertyPath: m_RootOrder
       value: 2

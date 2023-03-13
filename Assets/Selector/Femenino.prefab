@@ -78,7 +78,6 @@ GameObject:
   - component: {fileID: 7295039312186905514}
   - component: {fileID: 1795465791513843424}
   - component: {fileID: 7620640549350170341}
-  - component: {fileID: 7414256883413338672}
   m_Layer: 0
   m_Name: Femenino
   m_TagString: Player
@@ -147,20 +146,6 @@ CapsuleCollider:
   m_Height: 2.6179733
   m_Direction: 1
   m_Center: {x: -1.6556311, y: 0.5191817, z: -0.42290533}
---- !u!114 &7414256883413338672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6369303616082960527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 340cbad5cf13b0e4690b27d55c353ebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  slotHolder: {fileID: 0}
 --- !u!1001 &1810663048274175935
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6566680177993472625}
   - component: {fileID: 691700889179666119}
   - component: {fileID: 7624733769959048302}
-  - component: {fileID: 1971580744009891231}
   m_Layer: 0
   m_Name: Masculino
   m_TagString: Player
@@ -81,20 +80,6 @@ CapsuleCollider:
   m_Height: 2.6179733
   m_Direction: 1
   m_Center: {x: -1.6556311, y: 0.5191817, z: -0.42290533}
---- !u!114 &1971580744009891231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592206899785426838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 340cbad5cf13b0e4690b27d55c353ebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  slotHolder: {fileID: 0}
 --- !u!1 &5690377535535960957
 GameObject:
   m_ObjectHideFlags: 0

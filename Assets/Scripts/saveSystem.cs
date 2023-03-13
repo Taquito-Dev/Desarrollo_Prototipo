@@ -33,7 +33,7 @@ public class saveSystem : MonoBehaviour
             newData.username="jugador"; 
             newData.problem="1/2";
             newData.contrasena="secret";
-            newData.reto=1;
+            newData.reto=0;
             newData.puntaje=0;
             saveGame(newData);
         }
@@ -94,10 +94,15 @@ public class saveSystem : MonoBehaviour
         retoN.setNivelReto4(nivelReto5);
     }
 
-
+    public int snr(){
+        return data.reto;
+    }
+    public void saveNL(int NivelReto){
+        data.reto=NivelReto;
+        saveGame(data);
+    }
     public void lnv(){
         int nr=data.reto;
-       
     }
     public void prueba(){
         Debug.Log("works");

@@ -21,11 +21,8 @@ public class triggerRespuesta : MonoBehaviour
 
     float test = 0f;
 
-
-
-
-
-
+    public saveSystem save;
+    int nr=0;
     //public fracSelection FracSelection;
     //lo comentado fue lo que intente pero no jalo
 
@@ -187,8 +184,8 @@ public class triggerRespuesta : MonoBehaviour
     }
     void Start()
     {  
+        nr=save.snr();
         RectTransform robot = GetComponent<RectTransform>();
-        
     }
       
     public void Scene()
@@ -202,6 +199,10 @@ public class triggerRespuesta : MonoBehaviour
         bien.SetActive(false);
         mal.SetActive(false);
         SceneManager.LoadScene("GameScene");
+        if(nr<2){
+            nr=2;
+        }
+        save.saveNL(nr);
     }
 
     // Update is called once per frame
@@ -215,9 +216,9 @@ public class triggerRespuesta : MonoBehaviour
     }
     else if(porcentaje>=1.9){
         porc.text="Listo";
-            bien.SetActive(true);
-            mal.SetActive(false);
-            Invoke("SceneGod", 2.0f);
+        bien.SetActive(true);
+        mal.SetActive(false);
+        Invoke("SceneGod", 2.0f);       
     }
     else{
             percent=porcentaje*100/2;

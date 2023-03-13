@@ -2025,6 +2025,7 @@ GameObject:
   - component: {fileID: 1067014665}
   - component: {fileID: 1067014666}
   - component: {fileID: 1067014667}
+  - component: {fileID: 1067014668}
   m_Layer: 0
   m_Name: Codigo
   m_TagString: Untagged
@@ -2077,6 +2078,7 @@ MonoBehaviour:
   denominadorS: {fileID: 1047356363}
   bien: {fileID: 243355526}
   mal: {fileID: 1136619029}
+  save: {fileID: 1067014668}
 --- !u!114 &1067014667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2094,6 +2096,18 @@ MonoBehaviour:
   planoDoblado:
   - {fileID: 1365216517327117563, guid: 2c34193a3d40f6d4295332f59d67f00c, type: 3}
   pos: {fileID: 14546052}
+--- !u!114 &1067014668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067014664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0178a0c2a277f63429e265336a439fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1134481712
 GameObject:
   m_ObjectHideFlags: 0

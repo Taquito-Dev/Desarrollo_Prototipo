@@ -28,7 +28,7 @@ public class questionSelector : MonoBehaviour
 
     float time;
     float timeDelay;
-    public static int nR =1;
+    public static int nR =0;
 
     public TMP_Text puntos;
     
@@ -40,7 +40,7 @@ public class questionSelector : MonoBehaviour
     }
     void Start()
     {
-        save.loadNivelReto();
+        nR=save.snr();
         randomButtons();        
         temp = Instantiate(objectsToInstantiate[n]);
         temp2 = Instantiate(ButtonstoInstantiate);
@@ -99,7 +99,7 @@ public class questionSelector : MonoBehaviour
         int z;
         while(indice<problemasTry.Length){
             repetido=false;
-            switch(nR){
+            /* switch(nR){
                 case 1:
                 Debug.Log("Reto 1");
                 n= Random.Range(0,5);
@@ -115,11 +115,10 @@ public class questionSelector : MonoBehaviour
                 default:
                 n=Random.Range(0,19);
                 break;
-            }
-            /* n= Random.Range(0,19);  */
+            } */
+            n= Random.Range(0,19); 
             for(int j=0; j<problemasTry.Length ;j++)
-            {
-                
+            {                
                 if (problemasTry[j]==problemas[n]){
                         repetido=true;
                     }
@@ -181,7 +180,7 @@ public class questionSelector : MonoBehaviour
             if(intentos==3){
                 Debug.Log("Lo siento, intenta el nivel de nuevo");
                 nR=1;
-                save.saveNivelReto();
+                save.saveNL(nR);
                 SceneManager.LoadScene("MensajeMal");
             }
         }
@@ -212,8 +211,8 @@ public class questionSelector : MonoBehaviour
         if(problema>=3)
         {
             SceneManager.LoadScene("MensajeBien");
-            nR++;
-            save.saveNivelReto();
+            nR=1;
+            save.saveNL(nR);
         }
         
     }

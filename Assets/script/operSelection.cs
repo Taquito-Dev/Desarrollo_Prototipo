@@ -10,6 +10,7 @@ public class operSelection : MonoBehaviour
     public string[] operacion;
     public string[] respuesta;
     public int m;
+    int nr=0;
 
     //public GameObject operacionCanvas;
     public GameObject plataforma;
@@ -34,12 +35,16 @@ public class operSelection : MonoBehaviour
     public GameObject bien;
     public GameObject mal;
 
+    public saveSystem save;
+    
+   
+
     public void operation(){
         mal.SetActive(false);
         bien.SetActive(false);
         operacion =new string[20];
         respuesta=new string[20];
-        operacion[0]="(16/5)+(4/5)";
+        operacion[0]="(16/5)-(4/5)";
         operacion[1]="(6/5)+(2/5)";
         operacion[2]="(7/2)+(4/2)";
         operacion[3]="(1/5)+(4/5)";
@@ -82,7 +87,7 @@ public class operSelection : MonoBehaviour
         respuesta[19]="4/4";
      
         
-        m=Random.Range(0,19);
+        m=Random.Range(0,19);       
         operaciontxt.text=operacion[m];
         Debug.Log(m);
     }
@@ -190,7 +195,11 @@ public class operSelection : MonoBehaviour
             problema++;
             if (problema >= 2)
             {
-                SceneManager.LoadScene("Reto");
+                SceneManager.LoadScene("GameScene");
+                if(nr<4){
+                    nr=4;
+                    save.saveNL(nr);
+                }
             }
             Invoke("operation", 2f);
         }
@@ -204,6 +213,7 @@ public class operSelection : MonoBehaviour
 
     void Start(){
         operation();
+         nr=save.snr();
     }
     // Update is called once per frame
     void Update()

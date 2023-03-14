@@ -17,6 +17,8 @@ public class operSelection : MonoBehaviour
     public colocarPlano _colocarPlano;
     public dropPlanos _dropPlanos;
 
+    public GameObject[] imagenes;
+
     [SerializeField] TextMeshProUGUI denominador;
     [SerializeField] TextMeshProUGUI numerador;
     [SerializeField] TextMeshProUGUI operaciontxt;
@@ -46,7 +48,7 @@ public class operSelection : MonoBehaviour
         respuesta=new string[20];
         operacion[0]="(16/5)-(4/5)";
         operacion[1]="(6/5)+(2/5)";
-        operacion[2]="(7/2)+(4/2)";
+        operacion[2]="(7/2)-(4/2)";
         operacion[3]="(1/5)+(4/5)";
         operacion[4]="(2/4)+(3/4)";
         operacion[5]="(2/4)+(1/4)";
@@ -61,9 +63,9 @@ public class operSelection : MonoBehaviour
         operacion[14]="(2/3)-(2/3)";
         operacion[15]="(8/5)-(3/5)";
         operacion[16]="(2/8)+(1/8)-(1/8)";
-        operacion[17]="(9/4)-(8/1)";
+        operacion[17]="(9/4)-(3/4)";
         operacion[18]="(12/1)-(2/1)";
-        operacion[19]="(1/4)+(6/4)-(3/4)";
+        operacion[19]="(9/4)-(2/4)-(3/4)";
 
         respuesta[0]="12/5";
         respuesta[1]="8/5";
@@ -82,13 +84,14 @@ public class operSelection : MonoBehaviour
         respuesta[14]="0";
         respuesta[15]="5/5";
         respuesta[16]="2/8";
-        respuesta[17]="1/4";
-        respuesta[18]="10";
+        respuesta[17]="6/4";
+        respuesta[18]="10";     
         respuesta[19]="4/4";
-     
-        
-        m=Random.Range(0,19);       
+
+        //m = 19;
+        m=Random.Range(0,19);
         operaciontxt.text=operacion[m];
+        imagenes[m].gameObject.SetActive(true);
         Debug.Log(m);
     }
 
@@ -117,7 +120,7 @@ public class operSelection : MonoBehaviour
                 Debug.Log("caso 5");
                 break;
             case 5:
-            respuestaCorrecta=0.75f;
+            respuestaCorrecta= 0.75f;
                 Debug.Log("caso 6");
                 break;
             case 6:
@@ -141,11 +144,11 @@ public class operSelection : MonoBehaviour
                 Debug.Log("caso 11");
                 break;
             case 11:
-            respuestaCorrecta=0.5555556f;
+            respuestaCorrecta= 0.555555556f;
                 Debug.Log("caso 12");
                 break;
             case 12:
-            respuestaCorrecta= 0.4285714f;
+            respuestaCorrecta= 0.428571429f;
                 Debug.Log("caso 13");
                 break;
             case 13:
@@ -165,7 +168,7 @@ public class operSelection : MonoBehaviour
                 Debug.Log("caso 17");
                 break;
             case 17:
-            respuestaCorrecta=0.25f;
+            respuestaCorrecta=1.5f;
                 Debug.Log("caso 18");
                 break;
             case 18:
@@ -191,6 +194,7 @@ public class operSelection : MonoBehaviour
             _colocarPlano.DesactivarCanvas();
             _dropPlanos.GenerarPlano();
             _dropPlanos.GeneraPlanoDoblado();
+            imagenes[m].gameObject.SetActive(false);
 
             problema++;
             if (problema >= 2)
@@ -208,6 +212,7 @@ public class operSelection : MonoBehaviour
             bien.SetActive(false);
             Debug.Log("Respuesta Incorrecta");
             Invoke("operation",2f);
+            imagenes[m].gameObject.SetActive(false);
         }
     }
 

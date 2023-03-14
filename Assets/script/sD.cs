@@ -1,51 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using TMPro;
 
-public class Login : MonoBehaviour
+public class sD : MonoBehaviour
 {
-    public Servidor servidor; 
-    public TMP_InputField usuario;
-    public TMP_InputField contrasena;
+    public Servidor servidor;
+    public GameObject usuarioNombre;
+
+    public TMP_InputField Usuario;
+    public TMP_InputField contadorPlanos;
     public GameObject imLoading;
     public DBUsuario usuarioDatos;
+    public colocarPlano _colocarPlano;
 
-    //public TextMeshProUGUI usuarioNombre;
-
-    public void IniciarSesion()
+    public void registrarDatosUsuarios()
     {
         StartCoroutine(Iniciar());
-        
     }
 
     IEnumerator Iniciar()
     {
+        contadorPlanos.text = _colocarPlano.contadorPlanos.ToString();
         imLoading.SetActive(true);
         string[] datos = new string[2];
-        datos[0] = usuario.text;
-        datos[1] = contrasena.text;
-        StartCoroutine(servidor.ConsumirServicio("login", datos, Intro));
+        datos[0] = Usuario.text;
+        datos[1] = contadorPlanos.text;
+
+
+        StartCoroutine(servidor.ConsumirServicio("registrarDatosUsuarios", datos, Intro));
 
         yield return new WaitForSeconds(0.5f);
         yield return new WaitUntil(() => !servidor.ocupado);
         imLoading.SetActive(false);
+
     }
 
     void Intro()
     {
         switch (servidor.respuesta.codigo)
         {
-            case 204: // El Usuario y/o la contrasena son incorrectos
+            case 204: // El Usuario y/o la contraseña son incorrectos
                 print(servidor.respuesta.mensaje);
                 break;
             case 205: // Inicio de secion correcto
-                      //
-                      SceneManager.LoadScene("Main_Menu");
+                      // SceneManager.LoadScene("Intro");
                 usuarioDatos = JsonUtility.FromJson<DBUsuario>(servidor.respuesta.respuesta);
-                //usuarioNombre.text = usuarioDatos.usuario;
                 break;
             case 402: // Faltan datos para realizar la accion solicitada
                 print(servidor.respuesta.mensaje);
@@ -57,4 +57,6 @@ public class Login : MonoBehaviour
                 break;
         }
     }
+
+
 }

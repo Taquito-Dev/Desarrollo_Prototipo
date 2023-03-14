@@ -196,8 +196,8 @@ public class operSelection : MonoBehaviour
             if (problema >= 2)
             {
                 SceneManager.LoadScene("GameScene");
-                if(nr<4){
-                    nr=4;
+                if(nr<3){
+                    nr=3;
                     save.saveNL(nr);
                 }
             }

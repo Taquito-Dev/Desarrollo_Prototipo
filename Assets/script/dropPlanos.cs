@@ -27,7 +27,7 @@ public class dropPlanos : MonoBehaviour
 
     public void GeneraPlanoDoblado()
     {
-        Instantiate(planoDoblado[0], new Vector3(0.8f, 1.256f, -8.319f), pos.transform.rotation);
+        Instantiate(planoDoblado[0], new Vector3(1.012f, 1.256f, -8.319f), pos.transform.rotation);
     }
 
 

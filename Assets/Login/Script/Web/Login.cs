@@ -13,9 +13,12 @@ public class Login : MonoBehaviour
     public GameObject imLoading;
     public DBUsuario usuarioDatos;
 
+    //public TextMeshProUGUI usuarioNombre;
+
     public void IniciarSesion()
     {
         StartCoroutine(Iniciar());
+        
     }
 
     IEnumerator Iniciar()
@@ -42,6 +45,7 @@ public class Login : MonoBehaviour
                       //
                       SceneManager.LoadScene("Main_Menu");
                 usuarioDatos = JsonUtility.FromJson<DBUsuario>(servidor.respuesta.respuesta);
+                //usuarioNombre.text = usuarioDatos.usuario;
                 break;
             case 402: // Faltan datos para realizar la accion solicitada
                 print(servidor.respuesta.mensaje);

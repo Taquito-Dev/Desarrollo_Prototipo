@@ -14,6 +14,9 @@ public class Registrar : MonoBehaviour
     public GameObject imLoading;
     public DBUsuario usuarioDatos;
 
+    public saveSystem save;
+    int nr=0;
+
     public void RegistrarUsuario()
     {
         StartCoroutine(Iniciar());
@@ -39,7 +42,7 @@ public class Registrar : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             yield return new WaitUntil(() => !servidor.ocupado);
             imLoading.SetActive(false);
-            
+            save.saveNL(nr);            
         }
 
         
@@ -49,7 +52,7 @@ public class Registrar : MonoBehaviour
     {
         switch (servidor.respuesta.codigo)
         {
-            case 204: // El Usuario y/o la contraseña son incorrectos
+            case 204: // El Usuario y/o la contraseï¿½a son incorrectos
                 print(servidor.respuesta.mensaje);
                 break;
             case 205: // Inicio de secion correcto

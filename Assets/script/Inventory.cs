@@ -36,16 +36,17 @@ public class Inventory : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.I))
         {
             inventoryEnabled = !inventoryEnabled;
-        }
-
-        if (inventoryEnabled == true)
-        {
-            inventory.SetActive(true);
-        }
-        else
-        {
-            inventory.SetActive(false);
-        }
+            Debug.Log("I was pressed");
+        
+            if (inventoryEnabled == true)
+            {
+                inventory.SetActive(true);
+            }
+            else
+            {
+                inventory.SetActive(false);
+            }
+      }  
     }
 
     private void OnTriggerEnter(Collider other)

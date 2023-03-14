@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class colocarPlano : MonoBehaviour
 {
     public GameObject operacionCanvas;
+    public GameObject instruc;
     public GameObject PR;
     public int contadorPlanos = 0;
     //public Transform pos;
@@ -47,10 +48,12 @@ public class colocarPlano : MonoBehaviour
     public void ActivarCanvas()
     {
         operacionCanvas.gameObject.SetActive(true);
+        instruc.gameObject.SetActive(false);
     }
     public void DesactivarCanvas()
     {
         operacionCanvas.gameObject.SetActive(false);
+        instruc.gameObject.SetActive(true);
     }
 
     // Update is called once per frame

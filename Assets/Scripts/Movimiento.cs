@@ -34,7 +34,7 @@ public class Movimiento : MonoBehaviour
         {
             if(direccion == "Izquierda")
             {
-                rotacionPersonaje = -180f;
+                rotacionPersonaje = -180;
                 this.transform.Rotate(Vector3.up,rotacionPersonaje);
                 direccion = "Derecha";
             }

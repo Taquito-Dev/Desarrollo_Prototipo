@@ -96,7 +96,7 @@ public class questionSelector : MonoBehaviour
         bool repetido=false;
         int indice=0;
         int m=Random.Range(0,4);
-        int z;
+        
         while(indice<problemasTry.Length){
             repetido=false;
             /* switch(nR){

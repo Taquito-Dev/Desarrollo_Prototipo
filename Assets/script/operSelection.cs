@@ -38,8 +38,8 @@ public class operSelection : MonoBehaviour
     public GameObject mal;
 
     public saveSystem save;
-    
-   
+
+    int inco = 0;
 
     public void operation(){
         mal.SetActive(false);
@@ -197,17 +197,23 @@ public class operSelection : MonoBehaviour
             imagenes[m].gameObject.SetActive(false);
 
             problema++;
-            if (problema >= 2)
+            if (problema >= 5)
             {
-                SceneManager.LoadScene("GameScene");
+                SceneManager.LoadScene("MensajeBien");
                 if(nr<3){
                     nr=3;
                     save.saveNL(nr);
                 }
             }
+            if (inco == 3)
+            {
+                
+                SceneManager.LoadScene("MensajeMal"); 
+            }
             Invoke("operation", 2f);
         }
         else{
+            inco++;
             mal.SetActive(true);
             bien.SetActive(false);
             Debug.Log("Respuesta Incorrecta");

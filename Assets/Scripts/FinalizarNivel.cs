@@ -8,19 +8,37 @@ public class FinalizarNivel : MonoBehaviour
     public saveSystem save;
     public TMP_Text completado;
     int reto;
-    public questionSelector nR;
-
+    //public questionSelector nR;
+    
     public GameObject item2;
-
+    public GameObject item3;
+    public GameObject item4;
+    public GameObject pipetas;
+    public static int nR;
     // Start is called before the first frame update
     void Start()
     {
         item2.SetActive(false);
+        item3.SetActive(false);
+        item4.SetActive(false);
+        pipetas.SetActive(false);
         save.loadNivelRetoMenu();
-
-        if(questionSelector.nR==4)
+        nR = save.snr();
+        if (nR==1)
         {
             item2.SetActive(true);
+        }
+        else if (nR == 2)
+        {
+            item3.SetActive(true);
+        }
+        else if (nR == 3)
+        {
+            item4.SetActive(true);
+        }
+        else if (nR == 4)
+        {
+            pipetas.SetActive(true);
         }
     }
 

@@ -6,7 +6,7 @@ public class Movimiento : MonoBehaviour
 {
    private PlayerController player;
     private Animator anim;
-    private float velocidad = 2f;
+    private float velocidad = 5f;
     private float inputHorizontal;
     private float rotacionPersonaje;
     private string direccion = "Derecha";

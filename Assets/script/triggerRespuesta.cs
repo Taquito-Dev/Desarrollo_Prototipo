@@ -198,11 +198,15 @@ public class triggerRespuesta : MonoBehaviour
     {
         bien.SetActive(false);
         mal.SetActive(false);
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("MensajeBien");
         if(nr<2){
             nr=2;
         }
         save.saveNL(nr);
+    }
+    public void cambiar()
+    {
+        SceneManager.LoadScene("Reto");
     }
 
     // Update is called once per frame

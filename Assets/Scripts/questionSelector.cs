@@ -48,8 +48,8 @@ public class questionSelector : MonoBehaviour
         //bien.SetActive(false);
 
 
-        /* nR=1;
-        save.saveNivelReto(); */
+        //nR = 0;
+        //save.saveNL(nR);
         //Descomentar esta codigo y ejecutar el videojuego para reiniciar el reto
 
     }
@@ -208,7 +208,7 @@ public class questionSelector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(problema>=3)
+        if(problema>=5)
         {
             SceneManager.LoadScene("MensajeBien");
             nR=1;

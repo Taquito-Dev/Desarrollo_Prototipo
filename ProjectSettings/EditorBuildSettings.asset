@@ -57,6 +57,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Reto 3.unity
     guid: b012e6495d478e54da898d4b4bbf32c8
   - enabled: 1
+    path: Assets/Scenes/Reto4.unity
+    guid: 2534db81a3057434bbcbfeab9f8ceb6a
+  - enabled: 1
     path: Assets/Scenes/InfoMunicipio.unity
     guid: 17b26ec58d27faf43bd47141cc75061e
   m_configObjects: {}

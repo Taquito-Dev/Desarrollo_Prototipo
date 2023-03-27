@@ -35,16 +35,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MensajeMal.unity
     guid: 77c0d76bf1a1fd1479f6b008bd70e753
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Reto_0.unity
     guid: f014df581d5ee564cb68df82e0f96f5f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Reto_1.unity
     guid: 7716a1ab8603adf45bd3c68a753dcf36
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Reto_2.unity
     guid: 89067fc47e5983643800436584b65709
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Reto_3.unity
     guid: 6d40f05b4cf86834b948360e0b1e2421
   - enabled: 1
@@ -59,6 +59,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Reto4.unity
     guid: 2534db81a3057434bbcbfeab9f8ceb6a
+  - enabled: 1
+    path: Assets/Scenes/Nivel2.unity
+    guid: fa7a1a72fc41d48429a31858406c836a
+  - enabled: 1
+    path: Assets/Scenes/Nivel3.unity
+    guid: 9e62db1792c6b6b4294ee26294e9ce49
+  - enabled: 1
+    path: Assets/Scenes/Nivel4.unity
+    guid: 3db02a1559b7e6f4a812f97a4559e506
+  - enabled: 1
+    path: Assets/Scenes/Nivel5.unity
+    guid: aee677de7568c9c48bfde23b4e879d09
   - enabled: 1
     path: Assets/Scenes/InfoMunicipio.unity
     guid: 17b26ec58d27faf43bd47141cc75061e

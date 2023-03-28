@@ -32,6 +32,7 @@ public class LastLevel1 : MonoBehaviour
     public int n;
     public int nr=4;
 
+
     // Variables para almacenar el número de sliders con valor 1
     float numSlidersGrupo1 = 0f;
     float numSlidersGrupo2 = 0f;
@@ -74,6 +75,28 @@ public class LastLevel1 : MonoBehaviour
         n= Random.Range(0,19);
         respuestas= new float[20];
         problemas= new string[20];
+        
+        respuestas[0]=1.2f;
+        respuestas[1]=.25f;
+        respuestas[2]=.1875f;
+        respuestas[3]=.5f;
+        respuestas[4]=1.5f;
+        respuestas[5]=1.6f;
+        respuestas[6]=.333333f;
+        respuestas[7]=.15f;
+        respuestas[8]=1.2f;   
+        respuestas[9]=.5f;
+        respuestas[10]=.0555555556f;	
+        respuestas[11]=1f;
+        respuestas[12]=.333333333f;
+        respuestas[13]=.3f; 
+        respuestas[14]=.166666667f;
+        respuestas[15]=.266666667f;
+        respuestas[16]=1f;
+        respuestas[17]=.75f;
+        respuestas[18]=.388888889f;
+        respuestas[19]=.333333333f;
+       
         problemas[0]="6─5*5─5";
         problemas[1]="1─5*10─8";
         problemas[2]="1─2*3─8";
@@ -95,26 +118,7 @@ public class LastLevel1 : MonoBehaviour
         problemas[18]="1─6+1─2-1─12";
         problemas[19]="3─3-3─4+1─12";
 
-        respuestas[0]=1.2f;
-        respuestas[1]=.25f;
-        respuestas[2]=.1875f;
-        respuestas[3]=.5f;
-        respuestas[4]=1.5f;
-        respuestas[5]=1.6f;
-        respuestas[6]=.333333f;
-        respuestas[7]=.15f;
-        respuestas[8]=1.2f;   
-        respuestas[9]=.5f;
-        respuestas[10]=.0555555556f;	
-        respuestas[11]=1f;
-        respuestas[12]=.333333333f;
-        respuestas[13]=.3f; 
-        respuestas[14]=.166666667f;
-        respuestas[15]=.266666667f;
-        respuestas[16]=1f;
-        respuestas[17]=.75f;
-        respuestas[18]=.388888889f;
-        respuestas[19]=.333333333f;
+        
 
        /*  imagenFrac = Instantiate(objectsToInstantiate[n], pos.position, pos.transform.rotation) as GameObject;
         imagenFrac.transform.parent=pos.transform; */

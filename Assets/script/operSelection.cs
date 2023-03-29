@@ -46,18 +46,22 @@ public class operSelection : MonoBehaviour
         bien.SetActive(false);
         operacion =new string[20];
         respuesta=new string[20];
+        //nivel 2
+        //reto1 
         operacion[0]="(16/5)-(4/5)";
         operacion[1]="(6/5)+(2/5)";
         operacion[2]="(7/2)-(4/2)";
         operacion[3]="(1/5)+(4/5)";
         operacion[4]="(2/4)+(3/4)";
         operacion[5]="(2/4)+(1/4)";
+        //reto 2
         operacion[6]="(1/6)+(3/6)";
         operacion[7]="(2/3)+(3/3)";
         operacion[8]="(6/2)+(4/2)-(1/2)";
         operacion[9]="(11/3)-(5/3)";
         operacion[10]="(3/8)-(1/8)";
         operacion[11]="(2/9)+(3/9)";
+        //reto 3
         operacion[12]="(2/7)+(1/7)";
         operacion[13]="(7/6)-(3/6)";
         operacion[14]="(2/3)-(2/3)";

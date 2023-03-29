@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
-public class Nivel1Reto3 : MonoBehaviour
+public class Nivel2Reto3 : MonoBehaviour
 {
     public Slider decimadorN;
     public Slider decimadorD;
@@ -19,10 +19,11 @@ public class Nivel1Reto3 : MonoBehaviour
     public GameObject imgBien;
     public GameObject imgMal;
 
-    public GameObject[]objectsToInstantiate;
+    //public GameObject[]objectsToInstantiate;
+    public GameObject[] imagenes;
     GameObject temp;
     public Transform pos;
-    public GameObject imagenFrac;
+    
 
     public TMP_Text numerador;
     public TMP_Text denominador;
@@ -46,7 +47,6 @@ public class Nivel1Reto3 : MonoBehaviour
     void Start()
     {
         randomProblem();
-        temp = Instantiate(objectsToInstantiate[n]);
     }
 
     // Update is called once per frame
@@ -76,17 +76,16 @@ public class Nivel1Reto3 : MonoBehaviour
         }
 
         respuestas= new float[8];
-        respuestas[0]=0.8f;
-        respuestas[1]=0.1111111111f;
-        respuestas[2]=.25f;
-        respuestas[3]=0.7f;
-        respuestas[4]=0.75f;
-        respuestas[5]=0.25f;
-        respuestas[6]=1.75f;
-        respuestas[7]=1.25f;
+        respuestas[0]=3f/7f;
+        respuestas[1]=4f/6f;
+        respuestas[2]=0f;
+        respuestas[3]=5f/5f;
+        respuestas[4]=2f/8f;
+        respuestas[5]=6f/4f;
+        respuestas[6]=10f;
+        respuestas[7]=4f/4f;
 
-        imagenFrac = Instantiate(objectsToInstantiate[n], pos.position, pos.transform.rotation) as GameObject;
-        imagenFrac.transform.parent=pos.transform;
+        imagenes[n].gameObject.SetActive(true);
         respuesta=respuestas[n];
         imgBien.SetActive(false);
         imgMal.SetActive(false);
@@ -107,8 +106,14 @@ public class Nivel1Reto3 : MonoBehaviour
             if(decimadorN.value==1){
                 numSlidersGrupo1=10f;
             }
+            if(decimadorN.value==2){
+                numSlidersGrupo1=20f;
+            }
             if(decimadorD.value==1){
                 numSlidersGrupo2=10f;
+            }
+            if(decimadorD.value==2){
+                numSlidersGrupo2=20f;
             }
         // Recorrer todos los sliders del grupo 1 y contar los que tienen valor 1
         foreach (Slider slider in grupo1.GetComponentsInChildren<Slider>()) {
@@ -127,10 +132,12 @@ public class Nivel1Reto3 : MonoBehaviour
         Debug.Log("Número de sliders con valor 1 en grupo 2: " + numSlidersGrupo2); */
     }  
     public void RespuestaUsuario(){
-        float respuestaUs=numSlidersGrupo1/numSlidersGrupo2;
+        float respuestaUs=0f;
+        if(numSlidersGrupo1!=0 || numSlidersGrupo2!=0){
+            respuestaUs=numSlidersGrupo1/numSlidersGrupo2;
+        }
         Debug.Log("usuario:"+respuestaUs);
-        Debug.Log("correcta"+respuesta);
-         Destroy(imagenFrac);
+        Debug.Log("correcta"+respuesta);    
         if(respuestaUs==respuesta){
            imgBien.SetActive(true);
            Debug.Log("correcto");
@@ -143,5 +150,6 @@ public class Nivel1Reto3 : MonoBehaviour
             Invoke("randomProblem",3f);
             intentosIn++;
         }
+        imagenes[n].gameObject.SetActive(false);
     }
 }

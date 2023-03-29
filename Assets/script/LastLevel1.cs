@@ -20,16 +20,17 @@ public class LastLevel1 : MonoBehaviour
 
     public saveSystem save;
 
-    public GameObject[]objectsToInstantiate;
     public Transform pos;
-    public GameObject imagenFrac;
-    public string[] problemas;
+    
+    public GameObject[] imagenes;
+    
     public float[] respuestas;
     public float respuesta;
     public TMP_Text numerador;
     public TMP_Text denominador;
-    public TMP_Text problema;
-    public int n;
+    
+    public int n=-1;
+     List<int> numerosDisponibles = new List<int>(new int[] { 0, 1, 2, 3, 4, 5, 6, 7 });
     public int nr=4;
 
 
@@ -72,57 +73,29 @@ public class LastLevel1 : MonoBehaviour
     }
 
     public void randomPanel(){
-        n= Random.Range(0,19);
-        respuestas= new float[20];
-        problemas= new string[20];
-        
-        respuestas[0]=1.2f;
-        respuestas[1]=.25f;
-        respuestas[2]=.1875f;
-        respuestas[3]=.5f;
-        respuestas[4]=1.5f;
-        respuestas[5]=1.6f;
-        respuestas[6]=.333333f;
-        respuestas[7]=.15f;
-        respuestas[8]=1.2f;   
-        respuestas[9]=.5f;
-        respuestas[10]=.0555555556f;	
-        respuestas[11]=1f;
-        respuestas[12]=.333333333f;
-        respuestas[13]=.3f; 
-        respuestas[14]=.166666667f;
-        respuestas[15]=.266666667f;
-        respuestas[16]=1f;
-        respuestas[17]=.75f;
-        respuestas[18]=.388888889f;
-        respuestas[19]=.333333333f;
+        /* n= 7; */
+        if (numerosDisponibles.Count > 0)
+          {
+            int indiceAleatorio = Random.Range(0, numerosDisponibles.Count);
+            n = numerosDisponibles[indiceAleatorio];
+            numerosDisponibles.RemoveAt(indiceAleatorio);
+          }
+        respuestas= new float[20];       
+        respuestas[0]=.333333333f;
+        respuestas[1]=.3f; 
+        respuestas[2]=.166666667f;
+        respuestas[3]=.266666667f;
+        respuestas[4]=1f;
+        respuestas[5]=.75f;
+        respuestas[6]=.388888889f;
+        respuestas[7]=.333333333f;
        
-        problemas[0]="6─5*5─5";
-        problemas[1]="1─5*10─8";
-        problemas[2]="1─2*3─8";
-        problemas[3]="1─5*5─2";
-        problemas[4]="6─5÷5─5";
-        problemas[5]="1─5÷1─8";
-        problemas[6]="1─2÷3─2";
-        problemas[7]="1─5÷4─3";
-        problemas[8]="7─5-1─2*2─5";   
-        problemas[9]="1─2*2─4+1─4";
-        problemas[10]="1─6÷3─2-1─18";      	
-        problemas[11]="2─3÷3─4+1─9";
-        problemas[12]="1─2*1─3÷1─2";
-        problemas[13]="1─5*1─2+2─10";    	        
-        problemas[14]="1─2÷3─2-1─6";
-        problemas[15]="1─5*4─3";
-        problemas[16]="4─5-1─2+2─5";
-        problemas[17]="1─2+2─4-1─4";
-        problemas[18]="1─6+1─2-1─12";
-        problemas[19]="3─3-3─4+1─12";
-
+       imagenes[n].gameObject.SetActive(true);
         
 
        /*  imagenFrac = Instantiate(objectsToInstantiate[n], pos.position, pos.transform.rotation) as GameObject;
         imagenFrac.transform.parent=pos.transform; */
-        problema.text=problemas[n];
+       
         respuesta=respuestas[n];
         Debug.Log(n);
         imgBien.SetActive(false);
@@ -134,10 +107,16 @@ public class LastLevel1 : MonoBehaviour
         foreach (Slider slider in grupo2.GetComponentsInChildren<Slider>()) {
            slider.value =0;
         }
+        decimadorN.value=0;
+        decimadorD.value=0;
     }
     public void RespuestaUsuario(){
-        float respuestaUs=numSlidersGrupo1/numSlidersGrupo2;
+        float respuestaUs=0f;
+        if(numSlidersGrupo1!=0 || numSlidersGrupo2!=0){
+            respuestaUs=numSlidersGrupo1/numSlidersGrupo2;
+        }
         Debug.Log(respuestaUs);
+        Debug.Log(respuesta);
         if(respuestaUs==respuesta){
             imgBien.SetActive(true);
             Invoke("randomPanel",3f);
@@ -148,6 +127,7 @@ public class LastLevel1 : MonoBehaviour
              Invoke("randomPanel",3f);
              intentosIn++;
         }
+        imagenes[n].gameObject.SetActive(false);
     }
 
     // Update is called once per frame

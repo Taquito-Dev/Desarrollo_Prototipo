@@ -12,6 +12,11 @@ public class Login : MonoBehaviour
     public TMP_InputField contrasena;
     public GameObject imLoading;
     public DBUsuario usuarioDatos;
+    public TMP_Text usuarioNombre;
+    public string prefsNombreJugador = "Nombre";
+    public string prefsGen = "Genero";
+    public string nivelPlayer = "Nivel";
+
 
     //public TextMeshProUGUI usuarioNombre;
 
@@ -45,7 +50,7 @@ public class Login : MonoBehaviour
                       //
                       SceneManager.LoadScene("Main_Menu");
                 usuarioDatos = JsonUtility.FromJson<DBUsuario>(servidor.respuesta.respuesta);
-                //usuarioNombre.text = usuarioDatos.usuario;
+                usuarioNombre.text = usuarioDatos.usuario;
                 break;
             case 402: // Faltan datos para realizar la accion solicitada
                 print(servidor.respuesta.mensaje);
@@ -56,5 +61,20 @@ public class Login : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void SaveData()
+    {
+        PlayerPrefs.SetString("prefsNombreJugador", usuarioDatos.usuario);
+        PlayerPrefs.SetString("prefsGen", usuarioDatos.genPersonaje);
+        PlayerPrefs.SetInt("nivelPlayer", usuarioDatos.nivel);
+    }
+
+    private void OnDestroy()
+    {
+        SaveData();
+    }
+    public void Update()
+    {
     }
 }

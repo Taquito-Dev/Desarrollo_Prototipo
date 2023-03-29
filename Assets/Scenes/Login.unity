@@ -4577,6 +4577,7 @@ MonoBehaviour:
     id: 0
     usuario: 
     contrasena: 
+  usuarioNombre: {fileID: 911487976256841522, guid: 44c01f1b935d06f4b8d4074523ae8ea5, type: 3}
 --- !u!4 &1756904518
 Transform:
   m_ObjectHideFlags: 0

@@ -86,4 +86,6 @@ public class DBUsuario
     public int      id;
     public string   usuario;
     public string   contrasena;
+    public string   genPersonaje;
+    public int      nivel;
 }

@@ -54,7 +54,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Reto2.unity
     guid: cab23af6eae995c42a760dce0649714f
   - enabled: 1
-    path: Assets/Scenes/Reto 3.unity
+    path: Assets/Scenes/Reto 1.4.unity
     guid: b012e6495d478e54da898d4b4bbf32c8
   - enabled: 1
     path: Assets/Scenes/Reto4.unity

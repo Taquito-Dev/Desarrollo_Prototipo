@@ -48,18 +48,22 @@ public class Igualar : MonoBehaviour
         bien.SetActive(false);
         operacion = new string[20];
         respuesta = new string[20];
+        //nivel 4
+        //reto 1
         operacion[0] = "50%";
         operacion[1] = "100%";
         operacion[2] = "25%";
         operacion[3] = "40%";
         operacion[4] = "80%";
         operacion[5] = "25%";
+        //reto 2 
         operacion[6] = "100%";
         operacion[7] = "60%";
         operacion[8] = "25%";
         operacion[9] = "75%";
         operacion[10] = "70%";
         operacion[11] = "10%";
+        //reto 3
         operacion[12] = "60%";
         operacion[13] = "20%";
         operacion[14] = "66%";

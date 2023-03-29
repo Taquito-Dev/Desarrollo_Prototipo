@@ -27,8 +27,18 @@ MonoBehaviour:
     parametros:
     - usuario
     - contrasena
+  - nombre: actualizarDatos
+    URL: actualizarDatos.php
+    parametros:
+    - usuario
+    - genPersonaje
+  - nombre: guardarNivel
+    URL: guardarNivel.php
+    parametros:
+    - usuario
+    - nivel
   ocupado: 0
   respuesta:
-    codigo: 205
-    mensaje: Inicio de secion correcto
-    respuesta: '{"id":3,"usuario":"jj","contrasena":"123"}'
+    codigo: 402
+    mensaje: Faltan datos para realizar la accion solicitada
+    respuesta: 

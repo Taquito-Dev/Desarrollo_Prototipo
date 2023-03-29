@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PersonajeSelect : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class PersonajeSelect : MonoBehaviour
     public GameObject selectedObject; // personaje seleccionado
     public Button button1; // botón para seleccionar objeto 1
     public Button button2; // botón para seleccionar objeto 2
+    public string personaje;
+    public TMP_Text pj;
+    public ActualisarDatos _ActualisarDatos;
+    public Login _Login;
 
     void Start()
     {
@@ -27,9 +32,11 @@ public class PersonajeSelect : MonoBehaviour
 
     void SelectObject1()
     {
+        personaje = "nino";
         object1.SetActive(true);
         object2.SetActive(false);
         selectedObject = object1;
+        _ActualisarDatos.Registrar();
         Debug.Log("Objeto 1 Seleccionado");
         SaveSelectedObject();
         SceneManager.LoadScene("CineNiño");
@@ -37,9 +44,11 @@ public class PersonajeSelect : MonoBehaviour
 
     void SelectObject2()
     {
+        personaje = "nina";
         object1.SetActive(false);
         object2.SetActive(true);
         selectedObject = object2;
+        _ActualisarDatos.Registrar();
         Debug.Log("Objeto 2 Seleccionado");
         SaveSelectedObject();
         SceneManager.LoadScene("CineNiña");

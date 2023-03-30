@@ -6438,7 +6438,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1067014664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f8ddad564466004fab482f9b2fac30d, type: 3}
+  m_Script: {fileID: 11500000, guid: cee617a9c2f54bf40906c7c8a63e8da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   operacion: []
@@ -11061,7 +11061,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1067014669}
-        m_TargetAssemblyTypeName: Nivel2Reto2, Assembly-CSharp
+        m_TargetAssemblyTypeName: Nivel3Reto2, Assembly-CSharp
         m_MethodName: comparacion
         m_Mode: 1
         m_Arguments:

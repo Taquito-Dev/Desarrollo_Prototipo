@@ -138,8 +138,8 @@ public class LastLevel1 : MonoBehaviour
 
         if(intentosCo>5){
             SceneManager.LoadScene("MensajeBien");
-            if(nr<5){
-                nr=5;
+            if(nr<15){
+                nr=15;
                 save.saveNL(nr);
             }
         }

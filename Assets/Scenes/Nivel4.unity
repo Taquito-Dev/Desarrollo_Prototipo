@@ -1923,7 +1923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2558e1864273647be3587f28b0f2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 15
+  numeroEscena: 30
   Texto: {fileID: 594712083}
 --- !u!23 &344234771
 MeshRenderer:
@@ -4163,7 +4163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621164390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9093, y: 2.89, z: 26.37}
+  m_LocalPosition: {x: -1.9093, y: 2.89, z: 32.63}
   m_LocalScale: {x: 15.395218, y: 13.618385, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6299,7 +6299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2558e1864273647be3587f28b0f2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 15
+  numeroEscena: 25
   Texto: {fileID: 594712083}
 --- !u!23 &911639085
 MeshRenderer:
@@ -9603,7 +9603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2558e1864273647be3587f28b0f2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 14
+  numeroEscena: 13
   Texto: {fileID: 594712083}
 --- !u!23 &1433284829
 MeshRenderer:

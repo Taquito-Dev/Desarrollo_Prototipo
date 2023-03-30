@@ -59,8 +59,8 @@ public class Nivel4Reto3 : MonoBehaviour
         denominador.text=numSlidersGrupo2.ToString();    
         if(intentosCo>5){
             SceneManager.LoadScene("MensajeBien");
-            if(nr<2){
-                nr=3;
+            if(nr<12){
+                nr=12;
                 save.saveNL(nr);
             }
         }
@@ -69,14 +69,14 @@ public class Nivel4Reto3 : MonoBehaviour
         } 
     }
     void randomProblem(){
-        n=0;
+        //n=0;
         operacion = new string[8];
-        /* if (numerosDisponibles.Count > 0)
+        if (numerosDisponibles.Count > 0)
         {
             int indiceAleatorio = Random.Range(0, numerosDisponibles.Count);
             n = numerosDisponibles[indiceAleatorio];
             numerosDisponibles.RemoveAt(indiceAleatorio);
-        } */
+        }
 
         operacion[0] = "60%";
         operacion[1] = "20%";

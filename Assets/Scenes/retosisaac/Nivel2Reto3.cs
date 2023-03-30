@@ -34,7 +34,7 @@ public class Nivel2Reto3 : MonoBehaviour
     List<int> numerosDisponibles = new List<int>(new int[] { 0, 1, 2, 3, 4, 5, 6, 7 });
 
     public int n=-1;
-    public int nr=1;
+    public int nr;
 
     public saveSystem save;
     
@@ -56,8 +56,8 @@ public class Nivel2Reto3 : MonoBehaviour
         denominador.text=numSlidersGrupo2.ToString();    
         if(intentosCo>5){
             SceneManager.LoadScene("MensajeBien");
-            if(nr<2){
-                nr=3;
+            if(nr<6){
+                nr=6;
                 save.saveNL(nr);
             }
         }

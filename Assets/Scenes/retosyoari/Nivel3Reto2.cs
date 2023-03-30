@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Nivel2Reto2 : MonoBehaviour
+public class Nivel3Reto2 : MonoBehaviour
 {
     public string[] operacion;
     public string[] respuesta;
@@ -120,7 +120,7 @@ public class Nivel2Reto2 : MonoBehaviour
             problema++;
             if (problema >= 5)
             {
-                SceneManager.LoadScene("Nivel2");
+                SceneManager.LoadScene("Nivel3");
                 if(nr<3){
                     nr=3;
                     save.saveNL(nr);

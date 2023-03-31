@@ -29,6 +29,7 @@ public class Igualar5 : MonoBehaviour
     [SerializeField] Slider denominadorS;
 
     int problema = 0;
+    int malres = 0;
     public GameObject bien;
     public GameObject mal;
 
@@ -41,7 +42,7 @@ public class Igualar5 : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 4;
+    int nR = 13;
 
     public GameObject zero;
     public GameObject uno;
@@ -173,14 +174,15 @@ public class Igualar5 : MonoBehaviour
             problema++;
             if (problema >= 3)
             {
-                SceneManager.LoadScene("GameScene");
-                nR++;
+                SceneManager.LoadScene("Nivel5_Bien1");
+                //nR++;
                 save.saveNivelReto4();
             }
             Invoke("operation", 2f);
         }
-        else
+        else if (malres<3)
         {
+            malres++;
             mal.SetActive(true);
             bien.SetActive(false);
             Debug.Log("Respuesta Incorrecta");
@@ -192,6 +194,10 @@ public class Igualar5 : MonoBehaviour
             tres.SetActive(false);
             cuatro.SetActive(false);
             cinco.SetActive(false);
+        }
+        else if(malres==3)
+        {
+            SceneManager.LoadScene("Nivel5_Mal1");
         }
 
         //anim.SetBool("AD", false);
@@ -216,6 +222,7 @@ public class Igualar5 : MonoBehaviour
 
     void Start()
     {
+        
         zero.SetActive(false);
         uno.SetActive(false);
         dos.SetActive(false);

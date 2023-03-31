@@ -41,7 +41,7 @@ public class Igualar3 : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 4;
+    int nR = 7;
 
     public GameObject zero;
     public GameObject uno;
@@ -49,7 +49,7 @@ public class Igualar3 : MonoBehaviour
     public GameObject tres;
     public GameObject cuatro;
     public GameObject cinco;
-
+    int malres = 0;
 
     public void operation()
     {
@@ -173,14 +173,15 @@ public class Igualar3 : MonoBehaviour
             problema++;
             if (problema >= 3)
             {
-                SceneManager.LoadScene("GameScene");
-                nR++;
+                SceneManager.LoadScene("Nivel3_Bien1");
+                //nR++;
                 save.saveNivelReto4();
             }
             Invoke("operation", 2f);
         }
-        else
+        else if (malres < 3)
         {
+            malres++;
             mal.SetActive(true);
             bien.SetActive(false);
             Debug.Log("Respuesta Incorrecta");
@@ -192,6 +193,10 @@ public class Igualar3 : MonoBehaviour
             tres.SetActive(false);
             cuatro.SetActive(false);
             cinco.SetActive(false);
+        }
+        else if (malres == 3)
+        {
+            SceneManager.LoadScene("Nivel3_Mal1");
         }
 
         //anim.SetBool("AD", false);
@@ -216,6 +221,7 @@ public class Igualar3 : MonoBehaviour
 
     void Start()
     {
+        
         zero.SetActive(false);
         uno.SetActive(false);
         dos.SetActive(false);

@@ -40,7 +40,9 @@ public class Igualar : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 4;
+    int nR = 10;
+
+    int malres = 0;
 
     public void operation()
     {
@@ -221,18 +223,23 @@ public class Igualar : MonoBehaviour
             problema++;
             if (problema >= 5)
             {
-                SceneManager.LoadScene("Creditos");
-                nR++;
+                SceneManager.LoadScene("Nivel4_Bien1");
+                //nR++;
                 save.saveNivelReto4();
             }
             Invoke("operation", 2f);
         }
-        else
+        else if (malres < 3)
         {
+            malres++;
             mal.SetActive(true);
             bien.SetActive(false);
             Debug.Log("Respuesta Incorrecta");
             Invoke("operation", 2f);
+        }
+        else if (malres == 3)
+        {
+            SceneManager.LoadScene("Nivel4_Mal1");
         }
 
         //anim.SetBool("AD", false);
@@ -257,6 +264,7 @@ public class Igualar : MonoBehaviour
 
     void Start()
     {
+        
         operation();
         //anim = gameObject.GetComponent<Animator>();
         save.loadNivelReto4();

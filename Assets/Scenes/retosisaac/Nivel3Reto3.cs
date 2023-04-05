@@ -54,15 +54,15 @@ public class Nivel3Reto3 : MonoBehaviour
     {
         numerador.text=numSlidersGrupo1.ToString();
         denominador.text=numSlidersGrupo2.ToString();    
-        if(intentosCo>5){
-            SceneManager.LoadScene("Nivel3_Bien3");
+        if(intentosCo>2){
+            SceneManager.LoadScene("Nivel3_Bien1");
             if(nr<9){
                 nr=9;
                 save.saveNL(nr);
             }
         }
         if(intentosIn>3){
-            SceneManager.LoadScene("Nivel4_Mal3");
+            SceneManager.LoadScene("Nivel4_Mal1");
         } 
     }
     void randomProblem(){

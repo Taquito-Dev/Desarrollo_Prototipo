@@ -136,7 +136,7 @@ public class LastLevel1 : MonoBehaviour
         numerador.text=numSlidersGrupo1.ToString();
         denominador.text=numSlidersGrupo2.ToString();    
 
-        if(intentosCo>5){
+        if(intentosCo>2){
             SceneManager.LoadScene("Creditos");
             if(nr<15){
                 nr=15;
@@ -144,7 +144,7 @@ public class LastLevel1 : MonoBehaviour
             }
         }
         if(intentosIn>3){
-            SceneManager.LoadScene("Nivel5_Mal5");
+            SceneManager.LoadScene("Nivel5_Mal1");
 
         }    
     }

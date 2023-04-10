@@ -6153,7 +6153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2558e1864273647be3587f28b0f2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 17
+  numeroEscena: 50
   Texto: {fileID: 594712083}
 --- !u!23 &798966817
 MeshRenderer:

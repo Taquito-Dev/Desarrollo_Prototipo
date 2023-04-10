@@ -109,73 +109,73 @@ EditorBuildSettings:
     guid: e97ecd4bcb14185499b0927b01b43665
   - enabled: 0
     path: 
-    guid: db40a4e3da19df2498ff54d924799a58
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: 8861dc58b3c6d54479b59eb1f0d0eca9
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesBien/Nivel2_Bien1.unity
     guid: 766c240a25655cd43a061e85851e4611
   - enabled: 0
     path: 
-    guid: 86d7e35843eaabb4e9a9ec4d0c6ac5f8
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: a4b50039b7a0a3a47bedf0b41087d544
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesBien/Nivel3_Bien1.unity
     guid: 328c5680220f9cc41b29cff66f350001
   - enabled: 0
     path: 
-    guid: 5faf62f9c9b197145b55dd7db16125a8
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: be5a1af60d8917749955692f4d0dcbd4
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesBien/Nivel4_Bien1.unity
     guid: 320d89d3842737b4caa730bde7e4640c
   - enabled: 0
     path: 
-    guid: 483133454c627dc4cabc75eea9483a76
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: 9e23da3c43c6b8247974d0c4680d1839
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesBien/Nivel5_Bien1.unity
     guid: 1c30b7fee852abe4984a14b89c75ce5a
   - enabled: 0
     path: 
-    guid: 48989316f9011624ca698ad7da881834
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: c0520974e7b66e546be968662d71234f
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesMal/Nivel1_Mal1.unity
     guid: 57c197167316e2743a2b974f8724b329
   - enabled: 0
     path: 
-    guid: 5a142a17c09d9f843ade8b107aedc804
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: ae2c3f19d6cc77a499a9e6637a16cb01
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesMal/Nivel2_Mal1.unity
     guid: 50161581fcb58fd44a9223014aec175f
   - enabled: 0
     path: 
-    guid: ab1e4b70a6e1e7b46bc1bd465f341600
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: bee0ea6084933784095bd0317a5717c8
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesMal/Nivel3_Mal1.unity
     guid: e26da25053090d74c908158091febacb
   - enabled: 0
     path: 
-    guid: 94b9fa7dccf8bea45ad225e03741e73a
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: 5261fda73c9510843a0345baec61fa87
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesMal/Nivel4_Mal1.unity
     guid: 5ede10d8072fb4041a59ae26c0c374b4
@@ -184,7 +184,7 @@ EditorBuildSettings:
     guid: fc24c62853ce2b24ead94bc467d447ea
   - enabled: 0
     path: 
-    guid: 9a0bb8666c005a54d9bd510670c40913
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MensajesMal/Nivel5_Mal1.unity
     guid: 737e0a2fc18ff0f4d95f33dd8667184c
@@ -199,8 +199,29 @@ EditorBuildSettings:
     guid: 6b1bea793736e624084e694aabb86f2d
   - enabled: 0
     path: 
-    guid: f1294979d57970c418c52b07a7fee7c7
-  - enabled: 0
-    path: 
-    guid: b7042f9db2bfc294f95f6bd2fdb46151
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: "Assets/Scenes/Cinem\xE1ticas/N1.unity"
+    guid: e8631e65b4a637542b11680fbb462893
+  - enabled: 1
+    path: "Assets/Scenes/Cinem\xE1ticas/N2.unity"
+    guid: 12a6d5d12981bd24eabd57fe5714c647
+  - enabled: 1
+    path: "Assets/Scenes/Cinem\xE1ticas/N3.unity"
+    guid: d4132bd1c8aec324f963c16cc06d003d
+  - enabled: 1
+    path: "Assets/Scenes/Cinem\xE1ticas/N4.unity"
+    guid: fb9441ef6177e074f8492676adb0466c
+  - enabled: 1
+    path: "Assets/Scenes/Cinem\xE1ticas/N5.unity"
+    guid: 8fabc125064f0d14f9f0d01f509563aa
+  - enabled: 1
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniDolores.unity"
+    guid: ee641812b50440a44b25dc51be013d1c
+  - enabled: 1
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniSanMiguelAllende.unity"
+    guid: b6a1b1e5c6a55814eb1d14d5198cf0e5
+  - enabled: 1
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniSanJoseIturbide.unity"
+    guid: 38fcb5dfd0855f84ea1b884c1a1bbad1
   m_configObjects: {}

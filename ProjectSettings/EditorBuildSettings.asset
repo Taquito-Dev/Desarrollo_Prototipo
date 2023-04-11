@@ -224,4 +224,10 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Informaci\xF3n/InfoMuniSanJoseIturbide.unity"
     guid: 38fcb5dfd0855f84ea1b884c1a1bbad1
+  - enabled: 1
+    path: Assets/Scenes/InfoMuniGuanajuato.unity
+    guid: 9276fb5bef6abb44fb35481d6fc8a528
+  - enabled: 1
+    path: Assets/Scenes/InfoMuniIrapuato.unity
+    guid: f494eb0ee14870c4d980cd439189c2d7
   m_configObjects: {}

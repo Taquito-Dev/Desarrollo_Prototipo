@@ -204,7 +204,7 @@ public class Nivel4Reto2 : MonoBehaviour
             problema++;
             if (problema >= 5)
             {
-                SceneManager.LoadScene("Nivel4");
+                SceneManager.LoadScene("Nivel4_Bien1");
                 if(nr<3){
                     nr=3;
                     save.saveNL(nr);
@@ -213,7 +213,7 @@ public class Nivel4Reto2 : MonoBehaviour
             if (inco == 3)
             {
                 
-                SceneManager.LoadScene("MensajeMal"); 
+                SceneManager.LoadScene("Nivel4_Mal1"); 
             }
             Invoke("operation", 2f);
         }

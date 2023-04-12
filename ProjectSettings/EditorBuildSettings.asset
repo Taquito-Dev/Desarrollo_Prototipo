@@ -230,4 +230,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InfoMuniIrapuato.unity
     guid: f494eb0ee14870c4d980cd439189c2d7
+  - enabled: 1
+    path: Assets/Scenes/InfoMuniSalamanca.unity
+    guid: 3be9e13952dbf3c4cbe41c1812e0a89f
   m_configObjects: {}

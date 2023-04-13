@@ -60,4 +60,14 @@ public class PersonajeSelect : MonoBehaviour
         PlayerPrefs.SetString("SelectedObject", selectedObject.name);
         Debug.Log("Personaje"+selectedObject);
     }
+
+    /*public void CineFinal(){
+        if (personaje = "nino") {
+            SceneManager.LoadScene("CineMentefacturaNiño");
+        }
+        else {
+            SceneManager.LoadScene("CineMentefacturaNiña");
+        }
+        Debug.Log("Cinemática de Personaje"+personaje);
+    }*/
 }

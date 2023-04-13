@@ -229,7 +229,6 @@ GameObject:
   - component: {fileID: 273466344}
   - component: {fileID: 273466343}
   - component: {fileID: 273466346}
-  - component: {fileID: 273466345}
   m_Layer: 5
   m_Name: BotonOmitir
   m_TagString: Untagged
@@ -295,18 +294,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273466341}
   m_CullTransparentMesh: 1
---- !u!114 &273466345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273466341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 459d2211fcdbdf04f9923ce2100e242a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &273466346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,9 +338,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 273466345}
+      - m_Target: {fileID: 11500000, guid: 8dc24314fac93f14f84d267b87b3a3e6, type: 3}
         m_TargetAssemblyTypeName: Botones, Assembly-CSharp
-        m_MethodName: AAAEscena
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -242,4 +242,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InfoSanFelipe.unity
     guid: bb9db75a1b63b594c85dddbb367afcb9
+  - enabled: 1
+    path: "Assets/Scenes/Cinem\xE1tica Mentefactura/CineMentefacturaNi\xF1a.unity"
+    guid: 056a95504beadc041ae691b40bf9cee8
+  - enabled: 1
+    path: "Assets/Scenes/Cinem\xE1tica Mentefactura/CineMentefacturaNi\xF1o.unity"
+    guid: ed3b16c9dae5d2b41972b3e94084b3f1
   m_configObjects: {}

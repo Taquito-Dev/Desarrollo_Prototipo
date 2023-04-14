@@ -37,7 +37,7 @@ public class PersonajeSelect : MonoBehaviour
         object2.SetActive(false);
         selectedObject = object1;
         _ActualisarDatos.Registrar();
-        Debug.Log("Objeto 1 Seleccionado");
+        Debug.Log("Masculino Seleccionado");
         SaveSelectedObject();
         SceneManager.LoadScene("CineNiño");
     }
@@ -49,7 +49,7 @@ public class PersonajeSelect : MonoBehaviour
         object2.SetActive(true);
         selectedObject = object2;
         _ActualisarDatos.Registrar();
-        Debug.Log("Objeto 2 Seleccionado");
+        Debug.Log("Femenino Seleccionado");
         SaveSelectedObject();
         SceneManager.LoadScene("CineNiña");
     }
@@ -60,14 +60,4 @@ public class PersonajeSelect : MonoBehaviour
         PlayerPrefs.SetString("SelectedObject", selectedObject.name);
         Debug.Log("Personaje"+selectedObject);
     }
-
-    /*public void CineFinal(){
-        if (personaje = "nino") {
-            SceneManager.LoadScene("CineMentefacturaNiño");
-        }
-        else {
-            SceneManager.LoadScene("CineMentefacturaNiña");
-        }
-        Debug.Log("Cinemática de Personaje"+personaje);
-    }*/
 }

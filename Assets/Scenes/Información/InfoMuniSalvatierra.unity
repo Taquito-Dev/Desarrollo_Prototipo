@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 62a2cec337b437f4594d84ced3f55d74, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f10f8d1e55065e14fb54fdbb869105c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -466,13 +466,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "San Miguel de Allende, una ciudad de la \xE9poca colonial en la zona alta\ncentral
-    de M\xE9xico, es conocida por su arquitectura barroca espa\xF1ola,\nsu activa
-    escena art\xEDstica y sus festivales culturales. \n\nEn el centro hist\xF3rico
-    de adoquines de la ciudad, se encuentra\n la Parroquia de San Miguel Arc\xE1ngel,
-    de estilo neog\xF3tico, \ncuyas espectaculares torres rosas se alzan por sobre
-    la plaza principal, \n\nEl Jard\xEDn. Cerca se encuentra la iglesia del Templo
-    de San Francisco\n con una fachada churrigueresca del siglo XVIII."
+  m_Text: "Salvatierra es regi\xF3n de poemas y graneros de oro. Pueblo M\xE1gico
+    f\xE9rtil, \ndonde el R\xEDo Lerma transita orgulloso. Salvatierra, la tercera
+    ciudad colonial \nde Guanajuato\r\n\r\nLa comunidad de Salvatierra, se localiza
+    en el Valle de Guatzindeo, \nnombre de etimolog\xEDa ind\xEDgena que quiere decir
+    \u201Csitio de hermosa vegetaci\xF3n\u201D.\n Fue la primera comunidad que fuera
+    elevada a la categor\xEDa de ciudad, \nen esta regi\xF3n guanajuatense, en el
+    a\xF1o de 1644. Salvatierra es un lugar que atesora bellas \nmuestras de arquitectura
+    religiosa y civil, con abundantes puentes, \nhaciendas, conventos, y antiguas
+    casonas, las cuales le brindan a una gran distinci\xF3n\n y ambiente tradicional."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0

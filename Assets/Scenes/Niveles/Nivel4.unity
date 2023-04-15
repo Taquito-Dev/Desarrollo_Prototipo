@@ -492,7 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 730982536}
   dialogueLines:
-  - 'Dr. IT: Ahora tenemos que viajar a Irapuato y Guanajuato capital.'
+  - 'Dr. IT: Ahora tenemos que viajar a Irapuato, Guanajuato capital y Salamanca.'
   - "Dr. IT: Resuelve los problemas matem\xE1ticos y consigue las piezas electr\xF3nicas
     que nos hacen falta."
   dialogueText: {fileID: 44849257}
@@ -7801,7 +7801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2558e1864273647be3587f28b0f2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 13
+  numeroEscena: 12
   Texto: {fileID: 594712083}
 --- !u!23 &1433284829
 MeshRenderer:

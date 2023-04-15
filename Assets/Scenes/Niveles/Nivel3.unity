@@ -566,7 +566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 730982536}
   dialogueLines:
-  - "Dr. IT: Ay\xFAdame a encontrar las piezas faltantes del asistente. "
+  - "Dr. IT: Nuestro viaje nos ha tra\xEDdo a los municipios de Acambaro, Salvatierra
+    y Yuriria. "
   - "Dr. IT: Resuelve los problemas matem\xE1ticos y consigue los planos para armar
     al asistente. "
   dialogueText: {fileID: 44849257}

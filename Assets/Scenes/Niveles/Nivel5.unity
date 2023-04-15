@@ -572,7 +572,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 730982536}
   dialogueLines:
-  - "Dr. IT: Ay\xFAdame a encontrar las piezas faltantes del asistente. "
+  - "Dr. IT: Para terminar nuestra gran traves\xEDa, nos falta visitar Silao, Le\xF3n
+    y San Francisco. "
   - "Dr. IT: Resuelve los problemas matem\xE1ticos y consigue los planos para armar
     al asistente. "
   dialogueText: {fileID: 44849257}

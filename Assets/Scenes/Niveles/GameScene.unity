@@ -420,8 +420,8 @@ MonoBehaviour:
   dialogueMark: {fileID: 730982536}
   dialogueLines:
   - "Dr. IT: Ay\xFAdame a encontrar las piezas faltantes del asistente. "
-  - "Dr. IT: Resuelve los problemas matem\xE1ticos y consigue los planos para armar
-    al asistente. "
+  - "Dr. IT: Para empezar, debemos recolectar las piezas en San Felipe, Ocampo, San
+    Diego de la Uni\xF3n y San Luis de la Paz."
   dialogueText: {fileID: 44849257}
   dialoguePanel: {fileID: 348230879}
 --- !u!1 &44849255

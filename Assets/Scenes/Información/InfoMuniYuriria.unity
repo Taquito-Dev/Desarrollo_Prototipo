@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 62a2cec337b437f4594d84ced3f55d74, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b1f66b8bd84213a47a4842fcd692058b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -466,13 +466,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "San Miguel de Allende, una ciudad de la \xE9poca colonial en la zona alta\ncentral
-    de M\xE9xico, es conocida por su arquitectura barroca espa\xF1ola,\nsu activa
-    escena art\xEDstica y sus festivales culturales. \n\nEn el centro hist\xF3rico
-    de adoquines de la ciudad, se encuentra\n la Parroquia de San Miguel Arc\xE1ngel,
-    de estilo neog\xF3tico, \ncuyas espectaculares torres rosas se alzan por sobre
-    la plaza principal, \n\nEl Jard\xEDn. Cerca se encuentra la iglesia del Templo
-    de San Francisco\n con una fachada churrigueresca del siglo XVIII."
+  m_Text: "Al sur del estado aparece el pueblo de Yuriria. \nSus d\xEDas giran en
+    torno al convento que m\xE1s parece castillo, \naquel que tuvieron a bien dejar
+    los agustinos. \n\nFueron ellos quienes tambi\xE9n construyeron la enorme laguna
+    artificial \nque mantiene lejos las enfermedades y abastece de agua al poblado
+    desde hace siglos. \n\nLa gente pesca y pasea en lancha sobre su superficie;
+    \no a veces espera la llegada del atardecer en otro cuerpo de agua,\n el Lago
+    Cr\xE1ter, que si tiembla se pinta de rojo."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -848,6 +848,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117063207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe43429ac73ec743aa86d19524f7e31, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d23b2cc3ff04434693d7090f4bba616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

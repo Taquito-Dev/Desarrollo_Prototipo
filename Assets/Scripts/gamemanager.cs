@@ -9,7 +9,7 @@ public class gamemanager : MonoBehaviour
     private void Awake()
     {
         PauseMenuCanvas = GameObject.FindGameObjectWithTag("MenuPausa");
-        PauseMenuCanvas.SetActive(false);
+        PauseMenuCanvas.SetActive(true);
     }
 
     public void PauseGame()
@@ -23,7 +23,7 @@ public class gamemanager : MonoBehaviour
         {
             Time.timeScale = 1f;
 
-            PauseMenuCanvas.SetActive(false);
+            PauseMenuCanvas.SetActive(true);
         }
     }
 

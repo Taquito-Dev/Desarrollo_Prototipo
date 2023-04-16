@@ -73,7 +73,6 @@ public class LastLevel1 : MonoBehaviour
     }
 
     public void randomPanel(){
-        /* n= 7; */
         if (numerosDisponibles.Count > 0)
           {
             int indiceAleatorio = Random.Range(0, numerosDisponibles.Count);
@@ -90,14 +89,8 @@ public class LastLevel1 : MonoBehaviour
         respuestas[6]=.388888889f;
         respuestas[7]=.333333333f;
        
-       imagenes[n].gameObject.SetActive(true);
-        
-
-       /*  imagenFrac = Instantiate(objectsToInstantiate[n], pos.position, pos.transform.rotation) as GameObject;
-        imagenFrac.transform.parent=pos.transform; */
-       
-        respuesta=respuestas[n];
-        Debug.Log(n);
+        imagenes[n].gameObject.SetActive(true);
+        respuesta=respuestas[n];        
         imgBien.SetActive(false);
         imgMal.SetActive(false);
         foreach (Slider slider in grupo1.GetComponentsInChildren<Slider>()) {

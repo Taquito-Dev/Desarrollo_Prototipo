@@ -484,8 +484,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 954670225}
   - {fileID: 730982537}
+  - {fileID: 954670225}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -503,8 +503,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 730982536}
   dialogueLines:
-  - "Dr. IT: Ahora viajaremos a tierras m\xE1gicas.  "
-  - "Dr. IT: Visitaremos Dolores Hidalgo, San Miguel de Allende y San Jos\xE9 Iturbide."
+  - 'Dr. IT: Para continuar, necesitamos las piezas base del asistente. '
+  - "Dr. IT: Visitaremos las tierras m\xE1gicas de Dolores Hidalgo, San Miguel de
+    Allende y San Jos\xE9 Iturbide."
   dialogueText: {fileID: 44849257}
   dialoguePanel: {fileID: 348230879}
 --- !u!1 &44849255
@@ -4495,7 +4496,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 42911605}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!212 &730982538
 SpriteRenderer:

@@ -419,9 +419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 730982536}
   dialogueLines:
-  - "Dr. IT: Ay\xFAdame a encontrar las piezas faltantes del asistente. "
-  - "Dr. IT: Para empezar, debemos recolectar las piezas en San Felipe, Ocampo, San
-    Diego de la Uni\xF3n y San Luis de la Paz."
+  - "Dr. IT: Ay\xFAdame a encontrar las piezas faltantes del asistente, el primer
+    paso es conseguir los planos.  "
+  - "Dr. IT: Nuestros destinos son San Felipe, San Diego de la Uni\xF3n y Ocampo."
   dialogueText: {fileID: 44849257}
   dialoguePanel: {fileID: 348230879}
 --- !u!1 &44849255

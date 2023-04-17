@@ -572,10 +572,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 730982536}
   dialogueLines:
+  - "Dr. IT: \xA1Ya estamos en el tramo final de nuestra aventura!"
   - "Dr. IT: Para terminar nuestra gran traves\xEDa, nos falta visitar Silao, Le\xF3n
     y San Francisco. "
-  - "Dr. IT: Resuelve los problemas matem\xE1ticos y consigue los planos para armar
-    al asistente. "
+  - "Dr. IT: Consigue la Inteligencia Artificial (IA), para despu\xE9s poder armar
+    nuestro asistente. "
   dialogueText: {fileID: 44849257}
   dialoguePanel: {fileID: 348230879}
 --- !u!1 &44849255

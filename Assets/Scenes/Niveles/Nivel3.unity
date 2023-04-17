@@ -566,10 +566,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 730982536}
   dialogueLines:
-  - "Dr. IT: Nuestro viaje nos ha tra\xEDdo a los municipios de Acambaro, Salvatierra
+  - "Dr. IT: Nuestra traves\xEDa nos ha tra\xEDdo a los municipios de Acambaro, Salvatierra
     y Yuriria. "
-  - "Dr. IT: Resuelve los problemas matem\xE1ticos y consigue los planos para armar
-    al asistente. "
+  - "Dr. IT: Re\xFAne las piezas exteriores, las cuales nos ayudar\xE1n a darle forma
+    a nuestro asistente. "
   dialogueText: {fileID: 44849257}
   dialoguePanel: {fileID: 348230879}
 --- !u!1 &44849255

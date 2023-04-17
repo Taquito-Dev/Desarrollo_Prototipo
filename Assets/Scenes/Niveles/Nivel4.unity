@@ -492,9 +492,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 730982536}
   dialogueLines:
-  - 'Dr. IT: Ahora tenemos que viajar a Irapuato, Guanajuato capital y Salamanca.'
-  - "Dr. IT: Resuelve los problemas matem\xE1ticos y consigue las piezas electr\xF3nicas
-    que nos hacen falta."
+  - 'Dr. IT: Ahora tenemos que viajar a Irapuato, Guanajuato capital y Salamanca,
+    lugares bastante coloridos y llenos de vida.'
+  - "Dr. IT:  Consigue las piezas electr\xF3nicas que nos hacen falta para conectar
+    las piezas base con las piezas exteriores."
   dialogueText: {fileID: 44849257}
   dialoguePanel: {fileID: 348230879}
 --- !u!1 &44849255

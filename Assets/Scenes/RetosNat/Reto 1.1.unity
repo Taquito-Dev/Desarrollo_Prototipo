@@ -4218,7 +4218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Resuelve la siguiente operacion: '
+  m_text: "Resuelve la siguiente operaci\xF3n:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9bbed26af93bd7d42a86c7f0a866a2a8, type: 2}
   m_sharedMaterial: {fileID: -2081807489184960431, guid: 9bbed26af93bd7d42a86c7f0a866a2a8, type: 2}

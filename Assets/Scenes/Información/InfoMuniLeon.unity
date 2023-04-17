@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9f2fb35465bfba4a96b045387176ca4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b13ae4d1137d5041a9e612ddc492271, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -454,27 +454,28 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8026c8d8d25b06d4998cd4411917c709, type: 3}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 5f3b1375669ace247ae08998b1b0ea1e, type: 3}
+    m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
+    m_AlignByGeometry: 1
+    m_RichText: 0
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1.5
-  m_Text: "Por decreto del Virrey DON LUIS DE VELASCO. Se le dio este nombre por
-    el Santo que se venera \nen la Iglesia del lugar y por el d\xEDa de la fecha,
-    as\xED como por la paz que concentro con la Tribus \nChichimecas que asediaban
-    la regi\xF3n.\n\nPuedes recorrer las hermosas calles de este municipio testigo
-    de la grandeza del pueblo chichimeca. \nDisfrutar de la tranquilidad que ofrece,
-    sus bellas artesan\xEDas y probar la gran variedad de \ndulces t\xEDpicos y bebidas
-    de la regi\xF3n.\r\n\r\nSus imperdibles son las haciendas Mezcaleras con varios
-    siglos de historia y por supuesto la visita a su \npueblo M\xE1gico Mineral de
-    Pozos."
+    m_LineSpacing: 1
+  m_Text: "Le\xF3n de los Aldama es la ciudad m\xE1s grande del estado de Guanajuato,
+    alberga la Catedral \nBas\xEDlica de Nuestra Se\xF1ora de la Luz, el Templo Expiatorio
+    del Sagrado Coraz\xF3n, el Parque\nMetropolitano el F\xF3rum Cultural,  su tradicional
+    oferta de zapatos y productos de piel que la\nhan convertido en la Capital Mundial
+    de la Piel y el Calzado siendo su principal producto,\naunque en un principio
+    se dedicaba a la agricultura, pero a partir del siglo XVIII fue cuando empez\xF3
+    \ncon la producci\xF3n del calzado. \n\n\nHoy en d\xEDa, adem\xE1s de contar
+    con el teatro bicentenario,\n el desarrollo del centro de convenciones Poliforum,
+    donde se realizan exposiciones, as\xED como \nel Industrial Transformation Hannover
+    Messe, la feria industrial m\xE1s importante en Latinoam\xE9rica."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -850,6 +851,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117063207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cc7e1b97b9f6e4cab37068d1cdea35, type: 3}
+  m_Script: {fileID: 11500000, guid: c88b764956c70804da715d09d26690c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

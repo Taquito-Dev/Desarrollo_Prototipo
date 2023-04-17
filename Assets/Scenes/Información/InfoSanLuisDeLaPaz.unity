@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3ae2025354507e74b83b60ee1a13b3c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9f2fb35465bfba4a96b045387176ca4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -454,27 +454,27 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8026c8d8d25b06d4998cd4411917c709, type: 3}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 5f3b1375669ace247ae08998b1b0ea1e, type: 3}
+    m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: "San Francisco del Rinc\xF3n, donde se fabrica calzado, principalmente
-    deportivo hoy en la actualidad.\n \nPero en un principio, su principal actividad
-    era la manufactura de sombreros. Un dato curioso, es la\n \nleyenda de las brujas
-    del lugar.\n\nLos mejores lugares para visitar en San Francisco del Ric\xF3n
-    son: \n\nJalpa de C\xE1novas\r,\n\nLa Parroquia de San Francisco de As\xEDs,\r\n\nEl
-    Palacio Municipal\r,\n\nJard\xEDn Municipal\r,\n\nParroquia De Santa Maria De
-    Guadalupe Madre De La Misericordia\r,\n\nPlaza Madero\r,\n\nTemplo de San Miguel
-    Arcangel\r,\n\nLa Callejuela\r,\n\nIglesia De Nuestra Se\xF1ora De Guadalupe\r,\n\nTemplo
-    de San Miguel\r.\n"
+    m_LineSpacing: 1.5
+  m_Text: "Por decreto del Virrey DON LUIS DE VELASCO. Se le dio este nombre por
+    el Santo que se venera \nen la Iglesia del lugar y por el d\xEDa de la fecha,
+    as\xED como por la paz que concentro con la Tribus \nChichimecas que asediaban
+    la regi\xF3n.\n\nPuedes recorrer las hermosas calles de este municipio testigo
+    de la grandeza del pueblo chichimeca. \nDisfrutar de la tranquilidad que ofrece,
+    sus bellas artesan\xEDas y probar la gran variedad de \ndulces t\xEDpicos y bebidas
+    de la regi\xF3n.\r\n\r\nSus imperdibles son las haciendas Mezcaleras con varios
+    siglos de historia y por supuesto la visita a su \npueblo M\xE1gico Mineral de
+    Pozos."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -850,6 +850,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117063207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 738ee2777d993864bac3be9d792981c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 27cc7e1b97b9f6e4cab37068d1cdea35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

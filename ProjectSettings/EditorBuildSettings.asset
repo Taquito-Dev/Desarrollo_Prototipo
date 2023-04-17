@@ -102,7 +102,7 @@ EditorBuildSettings:
     path: Assets/Scenes/retosyoari/Nivel5Reto2.unity
     guid: 1f5d15f8d77232746807ed5799a46560
   - enabled: 1
-    path: Assets/Scenes/InfoMuniOcampo.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniOcampo.unity"
     guid: 17b26ec58d27faf43bd47141cc75061e
   - enabled: 1
     path: Assets/Scenes/MensajesBien/Nivel1_Bien1.unity
@@ -189,13 +189,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MensajesMal/Nivel5_Mal1.unity
     guid: 737e0a2fc18ff0f4d95f33dd8667184c
   - enabled: 1
-    path: Assets/Scenes/InfoMuniSilao.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniSilao.unity"
     guid: d069ca50c67faf643a4795572b776e66
   - enabled: 1
-    path: Assets/Scenes/InfoMuniLeon.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniLeon.unity"
     guid: f2855b41ae13f004eb522565c25fa3d5
   - enabled: 1
-    path: Assets/Scenes/InfoMuniSanFra.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniSanFra.unity"
     guid: 6b1bea793736e624084e694aabb86f2d
   - enabled: 0
     path: 
@@ -225,22 +225,22 @@ EditorBuildSettings:
     path: "Assets/Scenes/Informaci\xF3n/InfoMuniSanJoseIturbide.unity"
     guid: 38fcb5dfd0855f84ea1b884c1a1bbad1
   - enabled: 1
-    path: Assets/Scenes/InfoMuniGuanajuato.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniGuanajuato.unity"
     guid: 9276fb5bef6abb44fb35481d6fc8a528
   - enabled: 1
-    path: Assets/Scenes/InfoMuniIrapuato.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniIrapuato.unity"
     guid: f494eb0ee14870c4d980cd439189c2d7
   - enabled: 1
-    path: Assets/Scenes/InfoMuniSalamanca.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoMuniSalamanca.unity"
     guid: 3be9e13952dbf3c4cbe41c1812e0a89f
   - enabled: 1
-    path: Assets/Scenes/InfoSanLuisDeLaPaz.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoSanLuisDeLaPaz.unity"
     guid: 6d8b27b95f9b4634886ab88d205a46d7
   - enabled: 1
-    path: Assets/Scenes/InfoSanDiegoDeLaUnion.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoSanDiegoDeLaUnion.unity"
     guid: b7bace97bba5e614eb6c949c0fd6d213
   - enabled: 1
-    path: Assets/Scenes/InfoSanFelipe.unity
+    path: "Assets/Scenes/Informaci\xF3n/InfoSanFelipe.unity"
     guid: bb9db75a1b63b594c85dddbb367afcb9
   - enabled: 1
     path: "Assets/Scenes/Cinem\xE1tica Mentefactura/CineMentefacturaNi\xF1a.unity"

@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae4ceddc3affdb04fa5cdce4b07c406a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a578eda102b0ed4cac714c7046cb880, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -454,29 +454,27 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8026c8d8d25b06d4998cd4411917c709, type: 3}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5f3b1375669ace247ae08998b1b0ea1e, type: 3}
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Visitar la ciudad de Guanajuato es como hacer un viaje al pasado,\nu\u0301nica
-    en su estilo con ese sistema de callejones que la caracteriza.\nUna de las herencias
-    culturales ma\u0301s ricas de todo el pai\u0301s.\n Vas a llevarte una coleccio\u0301n
-    de fotos maravillosa,\n digna de enmarcarlas aunque ya no se use hacerlo.\n\n\nGuanajuato
-    es considerado Patrimonio Cultural de la Humanidad declarado\n asi\u0301 por
-    la UNESCO y no es de extran\u0303ar, pues su valor histo\u0301rico\n es enorme
-    y se puede ver desde que uno va \nentrando a la ciudad, en su arquitectura:\nun
-    hi\u0301brido ventre tu\u0301neles, plazas, callejones, calles peatonales subterra\u0301neas,\n
-    construcciones impresionantes como edificios virreinales,\ntemplos religiosos
-    de todos taman\u0303os que suelen ser mencionados en\n todo libro o revista de
-    Turismo."
+  m_Text: "Rodeada de campos de fresas, Irapuato es tambi\xE9n un gran centro \nde
+    negocios para la regi\xF3n, es una ciudad que te recibe con dulzura y calidez.
+    \nSu magn\xEDfica ubicaci\xF3n, la convierte en un enorme centro de abasto\nque
+    combina la vida  comercial del con la magia e historia del pasado.\n\n\nSus imperdibles
+    son Santuario de la Soledad, Templo de la Misericordia,\ntambi\xE9n llamado el
+    Hospitalito, San Francisco (El Convento),\nSantuario Expiatorio, Monumento a
+    la Bandera y Reloj del Sol,\n parque zool\xF3gico Irapuato y el Parque Irekua.
+    \nNo olvides pasar probar su gastronom\xEDa siempre con alg\xFAn toque de fresa\nque
+    te va a sorprender."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -852,6 +850,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117063207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662d79e46f37e564da815fd91f7eab37, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a61cfd9c0352ec48a6c3087e7a3443d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

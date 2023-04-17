@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0b13ae4d1137d5041a9e612ddc492271, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0abb87edb411f1b4bab77e14ea787738, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -454,29 +454,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8026c8d8d25b06d4998cd4411917c709, type: 3}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 5f3b1375669ace247ae08998b1b0ea1e, type: 3}
+    m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: "Le\xF3n de los Aldama es la ciudad m\xE1s grande del estado de Guanajuato,
-    alberga la Catedral\n \nBas\xEDlica de Nuestra Se\xF1ora de la Luz, el Templo
-    Expiatorio del Sagrado Coraz\xF3n, el Parque\n \nMetropolitano el F\xF3rum Cultural, 
-    su tradicional oferta de zapatos y productos de piel que la\n \nhan convertido
-    en la Capital Mundial de la Piel y el Calzado siendo su principal producto,\n\n
-    aunque en un principio se dedicaba a la agricultura, pero a partir del siglo
-    XVIII fue cuando\n\n empez\xF3 con la producci\xF3n del calzado. Hoy en d\xEDa,
-    adem\xE1s de contar con el teatro bicentenario,\n \nel desarrollo del centro
-    de convenciones Poliforum, donde se realizan exposiciones, as\xED como \n\nel
-    Industrial Transformation Hannover Messe, la feria industrial m\xE1s importante
-    en Latinoam\xE9rica."
+    m_LineSpacing: 1.5
+  m_Text: "San Felipe famoso por su mezcal de la comunidad de Jaral de Berrio, primer
+    sitio autorizado \npor la Corona Espa\xF1ola para su producci\xF3n en M\xE9xico.\r\n\r\nSus
+    imperdibles son su Alfarer\xEDa de barro, en temporada de lluvia la cascada en
+    \nCueva Longa, la Hacienda del Marques de Jaral de Berrio y la zona natural de
+    la Lagunita.\n\nDanza:\n la Danza de los Indios Brutos, Broncos o B\xE1rbaros,
+    originaria de San Felipe, Gto."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -852,6 +847,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117063207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88b764956c70804da715d09d26690c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 23b3828b6ea117f4b898cb17e697e776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

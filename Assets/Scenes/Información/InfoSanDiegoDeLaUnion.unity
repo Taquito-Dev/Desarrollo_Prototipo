@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8963e82943026543a7af02727841c7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b1a87e6b3fe695041a333c60b9a84c4e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -454,29 +454,25 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8026c8d8d25b06d4998cd4411917c709, type: 3}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 5f3b1375669ace247ae08998b1b0ea1e, type: 3}
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: "Monumentos Hist\xF3ricos\r\nEl municipio cuenta con diversos monumentos
-    arquitect\xF3nicos entre los cuales destacan el Templo de \nSanto Ni\xF1o de
-    Atocha, la Hacienda de Trojes, la pila de la Constituci\xF3n en el mercado municipal,
-    el \nArbol conmemorativo a la fundaci\xF3n del municipio, el Busto de don Melchor
-    Ocampo (en Ocampo)\n y el Templo de San Crist\xF3bal (en San Crist\xF3bal).\r\n\r\n\r\n\n\r\nFiestas,
-    Danzas y Tradiciones\r\nEnero (d\xEDa seis) Fiesta c\xEDvica Natalicio de Melchor
-    Ocampo.\r\n\r\n\r\n\r\nM\xFAsica\r\nSe escucha de toda la m\xFAsica nacional.\r\n\r\n\r\nArtesan\xEDas\r\nFabricaci\xF3n
-    de muebles coloniales y trabajos de madera torneada y ensamblada.\r\n\r\n\r\n\r\nGastronom\xEDa\r\nLa
-    comida t\xEDpica del municipio son: el mole regional, sopa de arroz, tamales
-    de toro y barbacoa de \nborrego.\r\n\r\n\r\n\r\nCentros Tur\xEDsticos\r\nEl municipio
-    cuenta con el Santuario de la Mariposa Monarca, El Rosario."
+    m_LineSpacing: 1.5
+  m_Text: "Sus hermosos paisajes y atardeceres definen este destino, rodeado por
+    la zona natural protegida \nde Pe\xF1a Alta puede marav\xEDllate con su impresionante
+    belleza, o disfrutar de la \ngastronom\xEDa que las Wamishas tienen para ofrecer.\r\n\r\nSus
+    imperdibles son El Santuario de Guadalupe, \nla Parroquia de San Diego de Alcal\xE1,
+    el Fuente del siglo XVIII.\naeropuerto internacional del baj\xEDo, as\xED como
+    el puerto interior, Cristo Rey y el Museo Jos\xE9\n y Tom\xE1s Ch\xE1vez Morado,
+    dedicado a este famoso artista pl\xE1stico mexicano."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -852,6 +848,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117063207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f323884b5df8f044bb46ecff19fa9365, type: 3}
+  m_Script: {fileID: 11500000, guid: 42c82f37d46f2c049855c38764c1045b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ab4ef4bb2cd514042baff4294725ebf6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28e914d9dddb2d34e92900983fe22090, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -454,25 +454,25 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8026c8d8d25b06d4998cd4411917c709, type: 3}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 5f3b1375669ace247ae08998b1b0ea1e, type: 3}
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Silao de la Victoria, parte del corredor industrial, donde se ubica el
-    parque Bicentenario, formando\n \nparte del corredor industrial del Baj\xEDo
-    (Silao, Le\xF3n, Irapuato, Salamanca y Celaya), siendo sus \n\nprincipales \xE1reas
-    de productividad la agr\xEDcola y la industria automotriz. Cuenta con el\n\naeropuerto
-    internacional del baj\xEDo, as\xED como el puerto interior, Cristo Rey y el Museo
-    Jos\xE9\n\n y Tom\xE1s Ch\xE1vez Morado, dedicado a este famoso artista pl\xE1stico
-    mexicano."
+  m_Text: "En su Centro Hist\xF3rico encontrar\xE1s una de las joyas\nm\xE1s brillantes
+    del arte mexicano, imposible quedar indiferente ante los \nmaravillosos retablos
+    dorados que recubren el templo de San Agust\xEDn.\n\n\nSus imperdibles son el
+    Templo del se\xF1or del Hospital, \nel Templo de San Agust\xEDn, el Templo de
+    las Tres Ca\xEDdas, \nel Museo Hidalgo y los talleres de cera escamada, \nuna
+    artesan\xEDa digna de aparadores.\n La nieve de pasta es toda una tradici\xF3n
+    que puedes \ndisfrutar al terminar tu recorrido por la ciudad."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -848,6 +848,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117063207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cc7e1b97b9f6e4cab37068d1cdea35, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbd658728da8ea4e8edcc1c767870af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

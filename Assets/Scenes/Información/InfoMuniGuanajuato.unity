@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 28e914d9dddb2d34e92900983fe22090, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae4ceddc3affdb04fa5cdce4b07c406a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -454,25 +454,28 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8026c8d8d25b06d4998cd4411917c709, type: 3}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5f3b1375669ace247ae08998b1b0ea1e, type: 3}
+    m_FontSize: 44
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "En su Centro Hist\xF3rico encontrar\xE1s una de las joyas\nm\xE1s brillantes
-    del arte mexicano, imposible quedar indiferente ante los \nmaravillosos retablos
-    dorados que recubren el templo de San Agust\xEDn.\n\n\nSus imperdibles son el
-    Templo del se\xF1or del Hospital, \nel Templo de San Agust\xEDn, el Templo de
-    las Tres Ca\xEDdas, \nel Museo Hidalgo y los talleres de cera escamada, \nuna
-    artesan\xEDa digna de aparadores.\n La nieve de pasta es toda una tradici\xF3n
-    que puedes \ndisfrutar al terminar tu recorrido por la ciudad."
+  m_Text: "Visitar la ciudad de Guanajuato es como hacer un viaje al pasado,\nu\u0301nica
+    en su estilo con ese sistema de callejones que la caracteriza.\nUna de las herencias
+    culturales ma\u0301s ricas de todo el pai\u0301s.\n Vas a llevarte una coleccio\u0301n
+    de fotos maravillosa,\n digna de enmarcarlas aunque ya no se use hacerlo.\n\n\nGuanajuato
+    es considerado Patrimonio Cultural de la Humanidad declarado\n asi\u0301 por
+    la UNESCO y no es de extran\u0303ar, pues su valor histo\u0301rico\n es enorme
+    y se puede ver desde que uno va \nentrando a la ciudad, en su arquitectura:\nun
+    hi\u0301brido ventre tu\u0301neles, plazas, callejones, calles peatonales subterra\u0301neas,\nconstrucciones
+    impresionantes como edificios virreinales,\ntemplos religiosos de todos taman\u0303os
+    que suelen ser mencionados en\n todo libro o revista de Turismo."
 --- !u!222 &404577432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -848,6 +851,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117063207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dbd658728da8ea4e8edcc1c767870af, type: 3}
+  m_Script: {fileID: 11500000, guid: 662d79e46f37e564da815fd91f7eab37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

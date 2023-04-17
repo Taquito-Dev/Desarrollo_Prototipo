@@ -55,7 +55,7 @@ public class Nivel2Reto3 : MonoBehaviour
         numerador.text=numSlidersGrupo1.ToString();
         denominador.text=numSlidersGrupo2.ToString();    
         if(intentosCo>2){
-            SceneManager.LoadScene("Nivel2_Bien1");
+            SceneManager.LoadScene("N2");
             if(nr<6){
                 nr=6;
                 save.saveNL(nr);

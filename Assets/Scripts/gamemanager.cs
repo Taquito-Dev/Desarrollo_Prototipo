@@ -16,12 +16,12 @@ public class gamemanager : MonoBehaviour
     {
         if (isGamePaused)
         {
-            Time.timeScale = 0f;
+            //Time.timeScale = 0f;
             PauseMenuCanvas.SetActive(true);
         }
         else
         {
-            Time.timeScale = 1f;
+            //Time.timeScale = 1f;
 
             PauseMenuCanvas.SetActive(true);
         }

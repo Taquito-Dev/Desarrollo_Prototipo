@@ -126,11 +126,7 @@ public class Nivel2Reto2 : MonoBehaviour
                     save.saveNL(nr);
                 }
             }
-            if (inco == 3)
-            {
-                
-                SceneManager.LoadScene("Nivel2_Mal1"); 
-            }
+            
             Invoke("operation", 2f);
         }
         else{
@@ -140,6 +136,11 @@ public class Nivel2Reto2 : MonoBehaviour
             Debug.Log("Respuesta Incorrecta");
             Invoke("operation",2f);
             imagenes[m].gameObject.SetActive(false);
+        }
+        if (inco == 3)
+        {
+
+            SceneManager.LoadScene("Nivel2_Mal1");
         }
     }
 

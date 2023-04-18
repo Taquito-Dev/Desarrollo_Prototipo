@@ -105,6 +105,7 @@ public class Nivel1Reto2 : MonoBehaviour
         Debug.Log(respuestaCorrecta);
         Debug.Log(respuestaUsuario);
 
+
         if(respuestaUsuario==respuestaCorrecta){
             Debug.Log("Respues correcta");
             bien.SetActive(true);
@@ -125,20 +126,24 @@ public class Nivel1Reto2 : MonoBehaviour
                     save.saveNL(nr);
                 }
             }
-            if (inco == 3)
-            {
-                
-                SceneManager.LoadScene("Nivel1_Mal1"); 
-            }
+            
             Invoke("operation", 2f);
         }
-        else{
+        
+        else
+        {
             inco++;
             mal.SetActive(true);
             bien.SetActive(false);
             Debug.Log("Respuesta Incorrecta");
             Invoke("operation",2f);
             imagenes[m].gameObject.SetActive(false);
+        }
+
+        if (inco == 3)
+        {
+
+            SceneManager.LoadScene("Nivel1_Mal1");
         }
     }
 

@@ -62,7 +62,7 @@ public class Nivel3Reto3 : MonoBehaviour
             }
         }
         if(intentosIn>3){
-            SceneManager.LoadScene("Nivel4_Mal1");
+            SceneManager.LoadScene("Nivel3_Mal1");
         } 
     }
     void randomProblem(){

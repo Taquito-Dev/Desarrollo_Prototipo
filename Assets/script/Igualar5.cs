@@ -42,7 +42,7 @@ public class Igualar5 : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 13;
+    int nR = 12;
 
     public GameObject zero;
     public GameObject uno;
@@ -205,17 +205,7 @@ public class Igualar5 : MonoBehaviour
         //anim.SetBool("AD", false);
     }
 
-    public void setNivelReto4(int nivelReto4)
-    {
-        nR = nivelReto4;
-        Debug.Log(nR);
-
-    }
-
-    public int getNivelReto4()
-    {
-        return nR;
-    }
+ 
 
     public void escena()
     {

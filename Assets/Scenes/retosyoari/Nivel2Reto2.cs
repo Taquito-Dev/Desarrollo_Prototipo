@@ -118,7 +118,7 @@ public class Nivel2Reto2 : MonoBehaviour
             imagenes[m].gameObject.SetActive(false);
 
             problema++;
-            if (problema >= 5)
+            if (problema >= 3)
             {
                 SceneManager.LoadScene("Nivel2_Bien1");
                 if(nr<5){

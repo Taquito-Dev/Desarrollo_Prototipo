@@ -41,7 +41,7 @@ public class Igualar1 : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 1;
+    int nR = 0;
 
     public GameObject zero;
     public GameObject uno;
@@ -212,18 +212,6 @@ public class Igualar1 : MonoBehaviour
         //anim.SetBool("AD", false);
     }
 
-    public void setNivelReto4(int nivelReto4)
-    {
-        nR = nivelReto4;
-        Debug.Log(nR);
-
-    }
-
-    public int getNivelReto4()
-    {
-        return nR;
-    }
-
     public void escena()
     {
         SceneManager.LoadScene("MensajeBien");
@@ -241,8 +229,11 @@ public class Igualar1 : MonoBehaviour
         cinco.SetActive(false);
         operation();
         //anim = gameObject.GetComponent<Animator>();
-        save.loadNivelReto4();
- 
+        //save.loadNivelReto4();
+        /* nR = 0;
+        save.saveNL(nR); */
+        //Descomentar esta codigo y ejecutar el videojuego para reiniciar el reto
+
     }
     // Update is called once per frame
     void Update()

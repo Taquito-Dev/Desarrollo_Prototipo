@@ -40,7 +40,7 @@ public class Igualar : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 10;
+    int nR = 9;
 
     int malres = 0;
 
@@ -221,7 +221,7 @@ public class Igualar : MonoBehaviour
             anim.SetBool("AD", true);
 
             problema++;
-            if (problema >= 5)
+            if (problema >= 3)
             {
                 SceneManager.LoadScene("Nivel4_Bien1");
                  if(nR<10){
@@ -247,17 +247,7 @@ public class Igualar : MonoBehaviour
         //anim.SetBool("AD", false);
     }
 
-    public void setNivelReto4(int nivelReto4)
-    {
-        nR = nivelReto4;
-        Debug.Log(nR);
-
-    }
-
-    public int getNivelReto4()
-    {
-        return nR;
-    }
+ 
 
     public void escena()
     {
@@ -269,7 +259,7 @@ public class Igualar : MonoBehaviour
         
         operation();
         //anim = gameObject.GetComponent<Animator>();
-        save.loadNivelReto4();
+        //save.loadNivelReto4();
     }
     // Update is called once per frame
     void Update()

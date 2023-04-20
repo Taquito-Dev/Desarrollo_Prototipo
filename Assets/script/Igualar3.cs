@@ -41,7 +41,7 @@ public class Igualar3 : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 7;
+    int nR = 6;
 
     public GameObject zero;
     public GameObject uno;
@@ -202,18 +202,6 @@ public class Igualar3 : MonoBehaviour
         }
 
         //anim.SetBool("AD", false);
-    }
-
-    public void setNivelReto4(int nivelReto4)
-    {
-        nR = nivelReto4;
-        Debug.Log(nR);
-
-    }
-
-    public int getNivelReto4()
-    {
-        return nR;
     }
 
     public void escena()

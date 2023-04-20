@@ -41,7 +41,7 @@ public class Igualar2 : MonoBehaviour
     public Animator anim;
 
     public saveSystem save;
-    int nR = 4;
+    int nR = 3;
 
     public GameObject zero;
     public GameObject uno;
@@ -175,8 +175,8 @@ public class Igualar2 : MonoBehaviour
             if (problema >= 3)
             {
                 SceneManager.LoadScene("Nivel2_Bien1");            
-                 if(nR<5){
-                    nR=5;
+                 if(nR<4){
+                    nR=4;
                     save.saveNL(nR);
                 }
             }
@@ -205,17 +205,7 @@ public class Igualar2 : MonoBehaviour
         //anim.SetBool("AD", false);
     }
 
-    public void setNivelReto4(int nivelReto4)
-    {
-        nR = nivelReto4;
-        Debug.Log(nR);
 
-    }
-
-    public int getNivelReto4()
-    {
-        return nR;
-    }
 
     public void escena()
     {

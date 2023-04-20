@@ -83,15 +83,15 @@ public class saveSystem : MonoBehaviour
 
     public void saveNivelReto4()
     {
-        int nivelReto5 = retoN.getNivelReto4();
-        data.reto = nivelReto5;
+        //int nivelReto5 = retoN.getNivelReto4();
+        //data.reto = nivelReto5;
         saveGame(data);
         Debug.Log("reto guardado 4");
     }
     public void loadNivelReto4()
     {
         int nivelReto5 = data.reto;
-        retoN.setNivelReto4(nivelReto5);
+        //retoN.setNivelReto4(nivelReto5);
     }
 
     public int snr(){

@@ -48,8 +48,8 @@ public class questionSelector : MonoBehaviour
         //bien.SetActive(false);
 
 
-        //nR = 0;
-        //save.saveNL(nR);
+        /* nR = 6;
+        save.saveNL(nR); */
         //Descomentar esta codigo y ejecutar el videojuego para reiniciar el reto
 
     }

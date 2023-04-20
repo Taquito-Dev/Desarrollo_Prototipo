@@ -173,9 +173,11 @@ public class Igualar3 : MonoBehaviour
             problema++;
             if (problema >= 3)
             {
-                SceneManager.LoadScene("Nivel3_Bien1");
-                //nR++;
-                save.saveNivelReto4();
+                SceneManager.LoadScene("Nivel3_Bien1");               
+                 if(nR<7){
+                    nR=7;
+                    save.saveNL(nR);
+                }
             }
             Invoke("operation", 2f);
         }

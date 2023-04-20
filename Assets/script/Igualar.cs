@@ -224,8 +224,10 @@ public class Igualar : MonoBehaviour
             if (problema >= 5)
             {
                 SceneManager.LoadScene("Nivel4_Bien1");
-                //nR++;
-                save.saveNivelReto4();
+                 if(nR<10){
+                    nR=10;
+                    save.saveNL(nR);
+                }
             }
             Invoke("operation", 2f);
         }

@@ -14,6 +14,8 @@ public class FinalizarNivel : MonoBehaviour
     public GameObject item3;
     public GameObject item4;
     public GameObject pipetas;
+
+  
     public static int nR;
     // Start is called before the first frame update
     void Start()
@@ -27,14 +29,17 @@ public class FinalizarNivel : MonoBehaviour
         if (nR==1)
         {
             item2.SetActive(true);
+           
         }
         else if (nR == 2)
         {
             item3.SetActive(true);
+           
         }
         else if (nR == 3)
         {
             item4.SetActive(true);
+           
         }
         else if (nR == 4)
         {

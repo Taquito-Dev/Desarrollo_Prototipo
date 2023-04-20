@@ -122,7 +122,7 @@ public class Nivel1Reto2 : MonoBehaviour
             {
                 SceneManager.LoadScene("Nivel1_Bien1");
                 if(nr<3){
-                    nr=3;
+                    nr=2;
                     save.saveNL(nr);
                 }
             }

@@ -121,8 +121,8 @@ public class Nivel2Reto2 : MonoBehaviour
             if (problema >= 5)
             {
                 SceneManager.LoadScene("Nivel2_Bien1");
-                if(nr<3){
-                    nr=3;
+                if(nr<5){
+                    nr=5;
                     save.saveNL(nr);
                 }
             }
